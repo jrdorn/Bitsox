@@ -1,32 +1,55 @@
-PSD/ keynote mockups/ wireframes for each page of site
+|| Personas and product/market filter
 
 
-|| Initial business requirements => wireframes
+|| Initial business requirements 
 
-    Bitsox is an ecommerce site for buying socks with cryptocurrency 
-        ???integrate with a DAO, solve real world problem?
-    
-    Problem to solve:
-        user needs and expectations
-        purpose behind this solution
-        high-level contraints that could negate success
-        describe what deliverables are needed (not how to accomplish them)
+    Right now many people are curious about cryptocurrency and may have hold it on 
+    a centralized exchange like Coinbase or even hold their own private keys, but crypto 
+    is still not commonly used to purchase physical goods. 
 
-        vision, objectives, and context 
-        success factors 
-        project scope
-        stakeholder identification 
-        solution scope
-        constraints (like schedule, budget)
-        quality control measures
+    Bitsox is an ecommerce site that allows people to purchase socks with cryptocurrency. 
 
-    Outcome to deliver value: 
+    This will allow users to spend their crypto conveniently, safely, and securely.
 
-#
-    potential and freedom of DeFi ecosystem
-    convenience, safety
-    anyone can buy from anywhere, unbanked and marginalized people
+    Constraints include international shipping, allocating adequate time for site design and maintenance,
+    providing responsive customer support, and scaling the platform.
 
+    Quality will be controlled through unit tests which rigorously verify the integrity of the platform.
+
+    Future expansions could include integration and collaboration with DAOs and NFT projects, 
+    such as providing special offers to a DAO or a unique sock displaying one's digital art NFT
+    on a sock. Users may also mint their own NFTs to represent ownership of their sock on the Solana
+    blockchain. 
+
+    Bitsox also aims to keep costs and shipping as low as possible, and to eventually offer the option 
+    to ship worldwide so that unbanked and marginalized people across the globe have access to a 
+    permissionless financial ecosystem. 
+
+
+
+            Problems to solve:
+                user needs and expectations
+                purpose behind this solution
+                high-level contraints that could negate success
+                describe what deliverables are needed (not how to accomplish them)
+
+                vision, objectives, and context 
+                success factors 
+                project scope
+                stakeholder identification 
+                solution scope
+                constraints (schedule, budget)
+                quality control measures
+
+
+            Outcome to deliver value: 
+                potential and freedom of DeFi ecosystem
+                convenience, safety
+                anyone can buy from anywhere, unbanked and marginalized people
+
+
+
+    ############################################################################################################
 
     features 
         search  
@@ -70,6 +93,31 @@ PSD/ keynote mockups/ wireframes for each page of site
 #
 
 
+|| Site logo, PSD/ keynote mockups/ wireframes for each page of site
+
+    Dimensions and resolution
+        Window
+        Favicon.ico 32x32
+            src http://freevector.co/author/jerron
+            gimp 
+            Uniswap logo and color 
+        Logo.png 
+
+        Header 1600 x (64 | 128 | 192)
+            npmjs.com ticolor animation
+            violet a022b5, orange e53a19, yellow fc5f08, turquoise 1caba5
+
+    Color scheme
+        Off-black 282828 (apple system)
+        lighter 2e2c2a
+        lightest 383735
+
+        purple 6b269d (uniswap)
+        pink cc72e2
+        violet a022b5
+
+    Font 
+        Uniswap inspo 
 
 
 

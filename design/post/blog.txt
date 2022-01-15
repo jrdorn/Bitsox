@@ -3,7 +3,8 @@
     Reddit
     Stackoverflow
     Amazon
-
+    MagicEden 
+    Coinbase 
 
 
 || Why chosen technologies
