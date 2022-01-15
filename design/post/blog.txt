@@ -32,104 +32,11 @@ deploy to AWS | Heroku
 
 
 
-|| Workflow
-
-Yerba Mate
-Yoga
-Meditation
-Plants and art
-Breathing exercises and physical micro-breaks
-
-Read broadly and look for inspo from unusual/ overlooked sources
-
-
-
-
-
-||| Design
-
-    !fully featured
-
-
-    1. initial business requirements => wireframes 
-
-    2. components
-
-    3. think of all the state needed to describe how app works
-        describe UI with as few state values as possible
-        app state (global, core data) and UI state (local, what the app is currently doing)
-            local => if dropdown is open, current value of form input...
-
-        design actions
-
-        write root reducer combineReducers
-            split reducer into slice reducers based on section of Redux state they update
-
-        ajax calls to server/ async functions inside Redux thunks (dispatch and getState as args)
-            loading state value to indicate current request status
-            "request started" action before API call
-            update loading state value when request completes
-
-        react-router-dom
-
-
-    Functionalities
-        search
-        select categories
-        add/ remove items to cart 
-        remove from inventory after purchase
-        notifications to email
-
-        smooth animations (dropdown menu, etc)
-
-    Front-end
-        Pages
-            homepage
-            individual item
-            cart 
-            checkout 
-            login
-                hooks:
-                        When the form is submitted, you want to make an authentication request, fire off a call to your analytics tracker, make another call to logging software, dispatch some events, then redirect the user to a different page
-                email
-                facebook
-                google
-            user account
-                view history
-                store payment  
-                change info
-                    address
-                    profile pic 
-            signup
-            help section
-                link to buy crypto
-                contact form 
-            reviews
-                reaction emojis
-            list and sell your own items
-
-            constant sidebar nav/ selectors, scrolling inventory
-
-
-    Back-end 
-        login/ logout
-        handle payment 
-        store inventory  
-        state of cart
-        JWT login
-
-
-    Etc
-        include ascii emoticons
-        font line height
-        write unit tests
-            login
-        accessible and responsive
-
-
 
 
 ||Structure
+
+!fully featured ecommerce
 
 Node
     Config

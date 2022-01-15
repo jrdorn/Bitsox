@@ -1,0 +1,172 @@
+PSD/ keynote mockups/ wireframes for each page of site
+
+
+|| Initial business requirements => wireframes
+
+    Bitsox is an ecommerce site for buying socks with cryptocurrency 
+        ???integrate with a DAO, solve real world problem?
+    
+    Problem to solve:
+        user needs and expectations
+        purpose behind this solution
+        high-level contraints that could negate success
+        describe what deliverables are needed (not how to accomplish them)
+
+        vision, objectives, and context 
+        success factors 
+        project scope
+        stakeholder identification 
+        solution scope
+        constraints (like schedule, budget)
+        quality control measures
+
+    Outcome to deliver value: 
+
+#
+    potential and freedom of DeFi ecosystem
+    convenience, safety
+    anyone can buy from anywhere, unbanked and marginalized people
+
+
+    features 
+        search  
+            autocomplete
+            filtering 
+        registration
+        pre-populate forms 
+        high resolution photos and video
+        reviews 
+        special offers 
+            discounts
+            freebies 
+            free shipping 
+        wish list (public/ private) and bookmarks 
+        you might like X
+        FAQs
+        SSL certificate, 2FA, firewall, 
+        customer service
+            return policy 
+            privacy policy 
+            shipping rates, times
+        SEO
+        CMS integration
+        shopping cart design 
+            shopping cart abandonment emails 
+        product showcase and descriptions 
+            images and categories 
+            internal SKUs (stock keeping units)
+            size and weights
+            inventory 
+        About us
+        blog posts
+        social media links 
+        trust marks
+        custom how-to guides 
+        email subscriber list 
+        video demonstrations
+        customer reviews and testimonials
+
+        fulfill legal req's of starting a business 
+#
+
+
+
+
+
+|| Components 
+
+
+
+
+|| State
+
+    think of all the state needed to describe how app works
+        describe UI with as few state values as possible
+        app state (global, core data) and UI state (local, what the app is currently doing)
+            local => if dropdown is open, current value of form input...
+
+        design actions
+
+        write root reducer combineReducers
+            split reducer into slice reducers based on section of Redux state they update
+
+        ajax calls to server/ async functions inside Redux thunks (dispatch and getState as args)
+            loading state value to indicate current request status
+            "request started" action before API call
+            update loading state value when request completes
+
+        react-router-dom
+
+
+
+
+
+
+
+
+
+    Functionalities
+        search
+        select categories
+        add/ remove items to cart 
+        remove from inventory after purchase
+        notifications to email
+
+        smooth animations (dropdown menu, etc)
+
+    Front-end
+        Pages
+            homepage
+            individual item
+            cart 
+            checkout 
+            login
+                hooks:
+                        When the form is submitted, you want to make an authentication request, fire off a call to your analytics tracker, make another call to logging software, dispatch some events, then redirect the user to a different page
+                email
+                facebook
+                google
+            user account
+                view history
+                store payment  
+                change info
+                    address
+                    profile pic 
+            signup
+            help section
+                link to buy crypto
+                contact form 
+            reviews
+                reaction emojis
+            list and sell your own items
+
+            constant sidebar nav/ selectors, scrolling inventory
+
+
+    Back-end 
+        login/ logout
+        handle payment 
+        store inventory  
+        state of cart
+        JWT login
+
+
+    Etc
+        include ascii emoticons
+        font line height
+        write unit tests
+            login
+
+
+
+|| CSS
+    
+    accessible
+    
+    responsive 
+        Mobile  <  768px (first)
+        Tablet  >= 768px
+        Desktop >= 1200px
+
+
+    font- weights and styles, line height
