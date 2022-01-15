@@ -1,0 +1,305 @@
+|| Inspiration
+
+    Reddit
+    Stackoverflow
+    Amazon
+
+
+
+|| Why chosen technologies
+
+(MERN)
+
+React
+    server-side rendering
+Redux
+    maintain state
+    CRUD operations
+Node Express
+    manage user sessions
+MongoDB
+
+Webpack
+
+HTML
+CSS
+
+
+deploy to AWS | Heroku
+
+
+
+
+
+
+|| Workflow
+
+Yerba Mate
+Yoga
+Meditation
+Plants and art
+Breathing exercises and physical micro-breaks
+
+Read broadly and look for inspo from unusual/ overlooked sources
+
+
+
+
+
+||| Design
+
+    !fully featured
+
+
+    1. initial business requirements => wireframes 
+
+    2. components
+
+    3. think of all the state needed to describe how app works
+        describe UI with as few state values as possible
+        app state (global, core data) and UI state (local, what the app is currently doing)
+            local => if dropdown is open, current value of form input...
+
+        design actions
+
+        write root reducer combineReducers
+            split reducer into slice reducers based on section of Redux state they update
+
+        ajax calls to server/ async functions inside Redux thunks (dispatch and getState as args)
+            loading state value to indicate current request status
+            "request started" action before API call
+            update loading state value when request completes
+
+        react-router-dom
+
+
+    Functionalities
+        search
+        select categories
+        add/ remove items to cart 
+        remove from inventory after purchase
+        notifications to email
+
+        smooth animations (dropdown menu, etc)
+
+    Front-end
+        Pages
+            homepage
+            individual item
+            cart 
+            checkout 
+            login
+                hooks:
+                        When the form is submitted, you want to make an authentication request, fire off a call to your analytics tracker, make another call to logging software, dispatch some events, then redirect the user to a different page
+                email
+                facebook
+                google
+            user account
+                view history
+                store payment  
+                change info
+                    address
+                    profile pic 
+            signup
+            help section
+                link to buy crypto
+                contact form 
+            reviews
+                reaction emojis
+            list and sell your own items
+
+            constant sidebar nav/ selectors, scrolling inventory
+
+
+    Back-end 
+        login/ logout
+        handle payment 
+        store inventory  
+        state of cart
+        JWT login
+
+
+    Etc
+        include ascii emoticons
+        font line height
+        write unit tests
+            login
+        accessible and responsive
+
+
+
+
+||Structure
+
+Node
+    Config
+
+    Controllers
+
+    Models
+    mongoose config and data model 
+
+    Routes
+
+    server
+        CORS 
+        REST API
+            GET/POST/PUT/DELETE HTTP methods
+
+React-Redux
+    
+    Components
+
+    .env
+
+
+
+
+|| Situation, action, response
+
+
+
+
+
+|| Challenges
+
+
+
+
+
+
+
+
+
+||| Lessons while building
+
+
+relief after modularizing break-it with vanilla JS  
+    ease of React, Redux fundamentals guide then coming across Toolkit and createAsyncThunk
+
+
+
+
+|| Unexpected events while building
+
+
+
+
+
+|| General notes
+
+React   
+    sync state and ui 
+    immutable state
+    components
+    controlled components
+    virtual dom
+    hooks instead of classes bit.ly/3FrDUhs
+    useState, setState, useEffect, useReducer
+
+
+Redux 
+    central store holding entire app state
+        each component can access any state from the store
+        manage states shared across components 
+        don't need to send props across components
+        consistency across client, server, native env
+    actions
+        events that send data from app to store
+        user events, api calls, form submissions
+        store.dispatch()
+        type and payload
+    store
+        only one per Redux app
+        access
+        update
+        register/unregister listeners
+    reducers
+        current state => action => return new state object
+        based on reduce(), single value calculated from many values after callback
+    middleware
+        e.g. sanitize login form input before sending to store
+
+    standard patterns
+        action creators 
+        memoized selectors
+        tracking request status via loading enums 
+        normalizing state for managing item collections
+        promises and thunks
+
+...
+
+React  
+    reconciliation algorithm
+        id minimal diff between trees to update the true dom
+        minimize reflow and repaint
+        O(n) compute tree diff 
+            2 elements of diff types always produce 2 diff dom trees 
+            signal stability of child components across render cycle by prodiving key props 
+    virtual tree dom    
+    200k in one sec 
+    breadth first search
+
+    renders all child components recursively by default, make sure not to re-render many components when nothing has changed
+        wrap componets in React.memo(), so they only re-render when their props change
+
+Redux   
+    React state won't need to be lifted up 
+    debugging, see what events cause a specific outcome  
+    reducers are pure functions 
+    immutable state => easier undo and redo
+    predictable and maintanable 
+
+    accidentally mutating state in reducers is most common Redux error
+    action creators, createSlice and createAction can accept "prepare callback" that returns action payload
+
+    call useSelector multiple times in one component, each call should return smallest ammount of state possible
+    returning new array references in selectors causes components to re-render every time
+
+React-Redux 
+      shallowEqual checks if items inside array are still the same
+      useSelector hook lets React components read data from Redux store
+      useDispatch hook lets React components dispatch actions to Redux store
+
+    action creator pattern-writing a function to prepare something that will get passed to dispatch
+
+    Reselect library's createSelector API generates memoized selector functions
+        only useful when you derive additional values from your original data
+
+    store data in normalized state structure 
+
+    useStore hook
+
+
+Redux Toolkit
+    createSlice
+    createReducer
+    createAsyncThunk    
+    createEntityAdapter
+
+
+Pure functions  
+    no side effects
+    if f() depends on vars outside itself, you don't know what will happen when you run it 
+    if f() mods other vals, including args, it can unexpectedly change the way the app works
+
+arrow functions and implicit return 
+
+Memoized selectors, Reselect library, createSelector()
+
+JS
+    .map returns array, .reduce returns single output
+
+
+
+
+entities: unique items with an ID 
+enums - enumeration - named constants
+
+handle API failures and other potential errors 
+
+working with objects 
+    ... spread operators, map(), keys() 
+    destructuring - export const {todoAdded, todoToggled } = todosSlice.actions 
+
+array.filter() element removal 
