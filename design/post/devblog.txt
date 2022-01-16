@@ -93,7 +93,11 @@ relief after modularizing break-it with vanilla JS
 choosing react => redux => react-router => react-router-redux
 
 
+slug- unique identifying part of a web address
+    -human-readable identifier   (example.com/slug  vs  example/com/32489ufeijos)
 
+Structuring code: React container & Redux feature 
+    
 
 
 
@@ -221,3 +225,4 @@ working with objects
     destructuring - export const {todoAdded, todoToggled } = todosSlice.actions 
 
 array.filter() element removal 
+

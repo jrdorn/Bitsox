@@ -1,15 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
+//
+import Home from "./pages/Home/Home";
+// import { Router, Route } from "react-router";
+//
 import * as serviceWorker from "./serviceWorker";
+
+/**
+ * Get React Router to render different pages
+ * Config React-Router-Redux
+ * Design Home
+ */
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Home />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
