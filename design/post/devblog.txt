@@ -96,9 +96,44 @@ choosing react => redux => react-router => react-router-redux
 slug- unique identifying part of a web address
     -human-readable identifier   (example.com/slug  vs  example/com/32489ufeijos)
 
-Structuring code: React container & Redux feature 
-    
 
+Structuring:  
+
+    React container 
+        "how things work" - data fetching, state updates
+        components without UI 
+        receive Redux state updates and dispatch actions
+        usually don't render DOM elements
+        delegate rendering to presentational child components 
+
+    React components
+        "how things look" - markup, styles 
+        presentational, UI 
+
+    Hooks 
+        can build without arbitrary divisions
+
+    Redux feature
+        separate by each website feature or domain 
+
+
+     #Common 
+        =>UI 
+            =>styles 
+            =>scripts
+        =>state
+            =>local 
+            =>global 
+
+     #Pages
+        =>UI
+            =>styles
+            =>scripts
+        =>state 
+            =>local
+            =>global
+
+     #Server
 
 
 

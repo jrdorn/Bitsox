@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../pages/Home/components/counter/counterSlice";
+import counterReducer from "../pages/Home/features/counter/counterSlice";
 // //
 // import { Router, browserHistory } from "react-router";
 // import { syncHistoryWithStore } from "react-router-redux";
