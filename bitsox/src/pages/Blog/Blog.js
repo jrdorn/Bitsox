@@ -5,7 +5,7 @@ import "./Blog.css";
 
 function Blog() {
   return (
-    <div>
+    <div id="Blog">
       <h1>Blog</h1>
       <Navbar />
     </div>

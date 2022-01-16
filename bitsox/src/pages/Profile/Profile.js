@@ -5,7 +5,7 @@ import "./Profile.css";
 
 function Profile() {
   return (
-    <div>
+    <div id="Profile">
       <h1>Profile</h1>
       <Navbar />
     </div>

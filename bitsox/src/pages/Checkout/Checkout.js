@@ -5,7 +5,7 @@ import "./Checkout.css";
 
 function Checkout() {
   return (
-    <div>
+    <div id="Checkout">
       <h1>Checkout</h1>
       <Navbar />
     </div>

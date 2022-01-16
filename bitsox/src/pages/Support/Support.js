@@ -5,7 +5,7 @@ import "./Support.css";
 
 function Support() {
   return (
-    <div>
+    <div id="Support">
       <h1>Support</h1>
       <Navbar />
     </div>
