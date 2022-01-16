@@ -88,16 +88,137 @@
 
             12px footer
 
+            1.4 line height? 
+
 
 
 
 
 || Components 
 
+    (single-responsibility principle)
+
+
+
+    >Cross-page components
+
+        Navbar (sidenav/ collapse/ hamburger)
+            searchbar 
+            page links 
+            product categories?
+
+        Footer 
+            Mobile: home, cart, profile, nav hamburger 
+            Tablet and desktop: support, copyright
+
+
+
+    HOME PAGE
+
+        inventory list
+            individual item
+
+
+    ABOUT PAGE
+
+        header and paragraph 
+
+        external links
+            purchasing crypto 
+            general ecosystem info 
+
+
+    SUPPORT 
+          
+
+        contact form 
+
+
+
+
+    PROFILE 
+
+        login/ register (email only, not Google | Facebook re: privacy concerns)
+
+        logout 
+
+        view history
+
+        update info 
+            public keys
+            address 
+            email 
+            password 
+        
+        email notifications
+
+
+        hooks:
+            submit form => 
+            auth request =>
+            analytics tracker => 
+            dispatch events =>
+            redirect user to new page 
+
+
+    BLOG 
+
+        individual posts
+
+
+    CART 
+
+        add/ remove items 
+
+
+    CHECKOUT 
+
+        form fields and buttons 
+
+        (remove item from inventory DB after puchase)
+
+
 
 
 
 || State
+
+    Data 
+
+        Global 
+            user auth
+            session state
+
+        Local
+            forms
+
+
+
+        user auth JWT
+            wishlist
+            cart state 
+            email notif's
+            public keys/ connect wallet 
+
+        JSON API inventory
+            size
+            weight 
+            category 
+            name
+            price
+            sold 
+    
+        session state- logged in/out, temp session  
+
+        Bitsox public keys 
+
+        analytics 
+
+        handle payment 
+        
+
+
+
 
     think of all the state needed to describe how app works
         describe UI with as few state values as possible
@@ -120,64 +241,6 @@
 
 
 
-
-
-
-
-    Functionalities
-        search
-        select categories
-        add/ remove items to cart 
-        remove from inventory after purchase
-        notifications to email
-
-        smooth animations (dropdown menu, etc)
-
-    Front-end
-        Pages
-            homepage
-            individual item
-            cart 
-            checkout 
-            login
-                hooks:
-                        When the form is submitted, you want to make an authentication request, fire off a call to your analytics tracker, make another call to logging software, dispatch some events, then redirect the user to a different page
-                email
-                facebook
-                google
-            user account
-                view history
-                store payment  
-                change info
-                    address
-                    profile pic 
-            signup
-            help section
-                link to buy crypto
-                contact form 
-            reviews
-                reaction emojis
-            list and sell your own items
-
-            constant sidebar nav/ selectors, scrolling inventory
-
-
-    Back-end 
-        login/ logout
-        handle payment 
-        store inventory  
-        state of cart
-        JWT login
-
-
-    Etc
-        include ascii emoticons
-        font line height
-        write unit tests
-            login
-
-
-
 || CSS
     
     accessible
@@ -187,5 +250,3 @@
         Tablet  >= 768px
         Desktop >= 1200px
 
-
-    font- weights and styles, line height

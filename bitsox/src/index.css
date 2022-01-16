@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: "Fira Code", monospace;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #282828;
+  color: #f7f7f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Times New Roman", Times, serif;
 }

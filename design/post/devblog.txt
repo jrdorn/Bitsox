@@ -14,6 +14,8 @@
 
 React
     server-side rendering
+React-router
+    URL routing
 Redux
     maintain state
     CRUD operations
@@ -24,6 +26,7 @@ MongoDB
 Webpack
 
 HTML
+
 CSS
 
 
@@ -85,6 +88,12 @@ React-Redux
 
 relief after modularizing break-it with vanilla JS  
     ease of React, Redux fundamentals guide then coming across Toolkit and createAsyncThunk
+
+
+choosing react => redux => react-router => react-router-redux
+
+
+
 
 
 
