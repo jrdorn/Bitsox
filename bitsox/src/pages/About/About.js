@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from "../Common/Navbar/Navbar";
+
 import "./About.css";
 
 function About() {
@@ -7,7 +8,7 @@ function About() {
     <div>
       <h1>About</h1>
 
-      <Link to="/">Home</Link>
+      <Navbar />
     </div>
   );
 }

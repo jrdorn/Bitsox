@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../Common/Navbar/Navbar";
+
 import "./Blog.css";
 
 function Blog() {
   return (
     <div>
-      <h1>About</h1>
+      <h1>Blog</h1>
+      <Navbar />
     </div>
   );
 }

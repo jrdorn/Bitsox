@@ -96,6 +96,9 @@ choosing react => redux => react-router => react-router-redux
 slug- unique identifying part of a web address
     -human-readable identifier   (example.com/slug  vs  example/com/32489ufeijos)
 
+default vs named exports 
+
+
 
 Structuring:  
 

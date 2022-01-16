@@ -1,6 +1,6 @@
 import React from "react";
 // import { Counter } from "./features/counter/Counter";
-import { Link } from "react-router-dom";
+import Navbar from "../Common/Navbar/Navbar";
 import "./Home.css";
 
 function Home() {
@@ -9,8 +9,7 @@ function Home() {
       {/* <Counter /> */}
 
       <h1>Home</h1>
-
-      <Link to="/about">About</Link>
+      <Navbar />
     </div>
   );
 }
