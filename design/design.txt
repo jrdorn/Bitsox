@@ -49,48 +49,6 @@
 
 
 
-    ############################################################################################################
-
-    features 
-        search  
-            autocomplete
-            filtering 
-        registration
-        pre-populate forms 
-        high resolution photos and video
-        reviews 
-        special offers 
-            discounts
-            freebies 
-            free shipping 
-        wish list (public/ private) and bookmarks 
-        you might like X
-        FAQs
-        SSL certificate, 2FA, firewall, 
-        customer service
-            return policy 
-            privacy policy 
-            shipping rates, times
-        SEO
-        CMS integration
-        shopping cart design 
-            shopping cart abandonment emails 
-        product showcase and descriptions 
-            images and categories 
-            internal SKUs (stock keeping units)
-            size and weights
-            inventory 
-        About us
-        blog posts
-        social media links 
-        trust marks
-        custom how-to guides 
-        email subscriber list 
-        video demonstrations
-        customer reviews and testimonials
-
-        fulfill legal req's of starting a business 
-#
 
 
 || Site logo, PSD/ keynote mockups/ wireframes for each page of site
@@ -118,6 +76,19 @@
 
     Font 
         Uniswap inspo 
+        Sizes 
+
+            56px head
+            24px subhead
+
+            18px head
+
+            32px subhead
+            20px body
+
+            12px footer
+
+
 
 
 

@@ -5,6 +5,7 @@
     Amazon
     MagicEden 
     Coinbase 
+    Uniswap
 
 
 || Why chosen technologies
