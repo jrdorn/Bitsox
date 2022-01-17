@@ -179,6 +179,9 @@ Redux
         based on reduce(), single value calculated from many values after callback
     middleware
         e.g. sanitize login form input before sending to store
+    slice 
+        a "slice" of Redux state 
+        reducer logic and actions for a single feature
 
     standard patterns
         action creators 
@@ -215,6 +218,8 @@ Redux
 
     call useSelector multiple times in one component, each call should return smallest ammount of state possible
     returning new array references in selectors causes components to re-render every time
+
+    
 
 React-Redux 
       shallowEqual checks if items inside array are still the same
