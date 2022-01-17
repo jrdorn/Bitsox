@@ -20,7 +20,6 @@ import Support from "./pages/Support/Support";
 // import * as serviceWorker from "./serviceWorker";
 
 /**
- * Configure rootStore
  * Design Common components used in multiple pages
  * Config ecommerce backend- inventory
  */

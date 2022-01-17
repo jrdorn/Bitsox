@@ -1,12 +1,128 @@
+/* || General Setup */
+
+/* 
+font-family: 'Roboto', sans-serif; 
+thin 100
+light 300
+regular 400
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
 body {
-  margin: 0;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #282828;
-  color: #f7f7f7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1c1c;
 }
 
-code {
-  font-family: "Times New Roman", Times, serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
+
+/* alternative box model */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* || Main Grid Layout */
+
+/* .head {
+  grid-area: head;
+  display: flex;
+  justify-content: center;
+  margin-left: 2em;
+}
+
+.sbar {
+  grid-area: sbar;
+  background-color: #58b791;
+}
+
+.gifs {
+  grid-area: gifs;
+}
+
+.logo {
+  grid-area: logo;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+}
+
+#index {
+  display: grid;
+  gap: 1em;
+  grid-template-areas: "head" "sbar" "gifs" "logo";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+} */
+
+/* || Typography */
+
+html {
+  color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  /* font-size: 1.5rem; */
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 100;
+}
+
+/*
+    Color scheme
+        Off-black 282828 (apple system)
+        lighter 2e2c2a
+        lightest 383735
+
+        purple 6b269d (uniswap)
+        pink cc72e2
+        violet a022b5
+
+    Font 
+        Uniswap inspo 
+        Sizes 
+
+            56px head
+            24px subhead
+
+            18px head
+
+            32px subhead
+            20px body
+
+            12px footer
+
+            1.4 line height? 
+*/
+
+/* || Responsive Design */

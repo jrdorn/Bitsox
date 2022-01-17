@@ -4,8 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   decrement,
   increment,
-  incrementByAmount,
-  incrementAsync,
   incrementIfEven,
   selectCount,
 } from "./FunctionComponentSlice";
@@ -13,8 +11,8 @@ import {
 import styles from "./FunctionComponent.module.css";
 
 const FunctionComponent = () => {
-  //
-  const fCount = useSelector(selectCount);
+  // selectCount => name from slice reducer => data from store
+  const fCount = useSelector(selectCount); //get data from Redux state
   const dispatch = useDispatch(); //dispatch function from Redux store
   //
 
