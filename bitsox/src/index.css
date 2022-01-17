@@ -1,16 +1,10 @@
 /* || General Setup */
 
-/* 
-font-family: 'Roboto', sans-serif; 
-thin 100
-light 300
-regular 400
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 body {
-  background-color: #1c1c1c;
+  /* off-black */
+  background-color: #282828;
 }
 
 html,
@@ -33,23 +27,23 @@ html {
 
 /* || Main Grid Layout */
 
-/* .head {
+/* .search {
   grid-area: head;
   display: flex;
   justify-content: center;
   margin-left: 2em;
 }
 
-.sbar {
+.filters {
   grid-area: sbar;
   background-color: #58b791;
 }
 
-.gifs {
+.deal {
   grid-area: gifs;
 }
 
-.logo {
+.inventory {
   grid-area: logo;
   position: fixed;
   bottom: 0;
@@ -60,10 +54,14 @@ html {
   background-color: inherit;
 }
 
-#index {
+.sitenav {
+  grid-area: sitenav;
+}
+
+body {
   display: grid;
   gap: 1em;
-  grid-template-areas: "head" "sbar" "gifs" "logo";
+  grid-template-areas: "search" "filters" "deal" "inventory" "sitenav";
   grid-template-columns: 100%;
   grid-template-rows: auto auto 1fr auto;
 }
@@ -77,52 +75,70 @@ body {
 /* || Typography */
 
 html {
-  color: #f6f6f6;
+  color: #f6f6f6; /* off-white */
   font-family: "Roboto", sans-serif;
-  /* font-size: 1.5rem; */
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 3rem;
 }
-
-h2 {
-  font-weight: 300;
-}
-
-h3 {
-  font-weight: 300;
-}
-
-p {
-  font-weight: 100;
-}
-
 /*
-    Color scheme
-        Off-black 282828 (apple system)
-        lighter 2e2c2a
-        lightest 383735
-
-        purple 6b269d (uniswap)
-        pink cc72e2
-        violet a022b5
-
-    Font 
-        Uniswap inspo 
-        Sizes 
+        Sizes (18px base)
 
             56px head
+
+            32px subhead
+
             24px subhead
+    
+            20px body
 
             18px head
 
-            32px subhead
-            20px body
-
             12px footer
-
-            1.4 line height? 
 */
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* lighter black */
+/* background-color: #2e2c2a; */
+
+/* lightest black */
+/* background-color: #383735; */
+
+/* purple */
+/* background-color: #6b269d; */
+
+/* pink */
+/* background-color: #cc72e2; */
+
+/* violet */
+/* background-color: #a022b5; */
 
 /* || Responsive Design */

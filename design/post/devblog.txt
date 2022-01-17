@@ -269,3 +269,7 @@ working with objects
 
 array.filter() element removal 
 
+
+optimize readability - 18px W3C/WAI standard
+    objectively improved readability https://pielot.org/pubs/Rello2016-Fontsize.pdf
+    1.5 - 2 line height https://www.w3.org/TR/WCAG20-TECHS/C21.html
