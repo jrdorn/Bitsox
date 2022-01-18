@@ -5,16 +5,17 @@ import Deal from "./features/Deal/Deal";
 import Inventory from "./features/Inventory/Inventory";
 import Navbar from "../Common/Navbar/Navbar";
 // import { Counter } from "./features/counter/Counter";
-import "./Home.css";
+import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <div id="Home">
-      <Searchbar />
-      <Filters />
-      <Deal />
-      <Inventory />
-      <Navbar />
+    <div id={styles.Home}>
+      <Searchbar id={styles.Searchbar} />
+      <Filters id={styles.Filters} />
+      <Deal id={styles.Deal} />
+      <Inventory id={styles.Inventory} />
+      <Navbar id={styles.Navbar} />
+
       {/* <h1>Home</h1>
 
       <h1>h1 Bitsox</h1>

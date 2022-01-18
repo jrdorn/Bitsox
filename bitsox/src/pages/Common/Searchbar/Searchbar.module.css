@@ -1,3 +1,6 @@
-.bg {
-  border: 5px solid red;
+.search {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #383735;
 }
