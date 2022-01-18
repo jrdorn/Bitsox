@@ -98,6 +98,7 @@ slug- unique identifying part of a web address
 
 default vs named exports 
 
+finding elems online and using devtools to borrow styles
 
 
 Structuring:  
