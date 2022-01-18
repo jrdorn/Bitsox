@@ -1,4 +1,8 @@
 import React from "react";
+
+import Searchbar from "../Common/Searchbar/Searchbar";
+import Proceed from "./features/Proceed/Proceed";
+import CartItem from "./features/CartItem/CartItem";
 import Navbar from "../Common/Navbar/Navbar";
 
 import "./Cart.css";
@@ -6,7 +10,9 @@ import "./Cart.css";
 function Cart() {
   return (
     <div id="Cart">
-      <h1>Cart</h1>
+      <Searchbar />
+      <Proceed />
+      <CartItem />
       <Navbar />
     </div>
   );

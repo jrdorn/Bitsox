@@ -97,6 +97,17 @@
 || Components 
 
     (single-responsibility principle)
+    # outline pages
+    # outline shared components and page-specific components 
+    setup grid layout for each page
+    complete responsive UI, routing 
+    add scripts
+    setup server 
+    setup mongodb
+    add state 
+        local 
+        global 
+    test and verify
 
 
 

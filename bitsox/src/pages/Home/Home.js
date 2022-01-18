@@ -1,16 +1,20 @@
 import React from "react";
-// import Navbar from "../Common/Navbar/Navbar";
+import Searchbar from "../Common/Searchbar/Searchbar";
+import Filters from "./features/Filters/Filters";
+import Deal from "./features/Deal/Deal";
+import Inventory from "./features/Inventory/Inventory";
+import Navbar from "../Common/Navbar/Navbar";
 // import { Counter } from "./features/counter/Counter";
 import "./Home.css";
 
 function Home() {
   return (
     <div id="Home">
-      <p class="common">Seachbar</p>
-      <p class="common">Filters</p>
-      <p>Deal</p>
-      <p>Inventory</p>
-      <p class="common">Navbar</p>
+      <Searchbar />
+      <Filters />
+      <Deal />
+      <Inventory />
+      <Navbar />
       {/* <h1>Home</h1>
 
       <h1>h1 Bitsox</h1>

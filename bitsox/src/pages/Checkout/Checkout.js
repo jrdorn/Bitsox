@@ -1,13 +1,17 @@
 import React from "react";
-import Navbar from "../Common/Navbar/Navbar";
+
+import Cancel from "./features/Cancel/Cancel";
+import PaymentMethod from "./features/PaymentMethod/PaymentMethod";
+import Shipping from "./features/Shipping/Shipping";
 
 import "./Checkout.css";
 
 function Checkout() {
   return (
     <div id="Checkout">
-      <h1>Checkout</h1>
-      <Navbar />
+      <Cancel />
+      <PaymentMethod />
+      <Shipping />
     </div>
   );
 }

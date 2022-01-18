@@ -1,4 +1,7 @@
 import React from "react";
+
+import Searchbar from "../Common/Searchbar/Searchbar";
+import BlogPost from "./features/BlogPost/BlogPost";
 import Navbar from "../Common/Navbar/Navbar";
 
 import "./Blog.css";
@@ -6,7 +9,8 @@ import "./Blog.css";
 function Blog() {
   return (
     <div id="Blog">
-      <h1>Blog</h1>
+      <Searchbar />
+      <BlogPost />
       <Navbar />
     </div>
   );
