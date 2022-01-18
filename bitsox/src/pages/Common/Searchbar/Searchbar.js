@@ -3,14 +3,13 @@ import styles from "./Searchbar.module.css";
 
 function Searchbar() {
   return (
-    <form role="search" action="/search" autoComplete="off">
+    <form id={styles.Searchbar} role="search" action="/search">
       <input
         type="search"
         id={styles.search}
         name="search"
         aria-label="Search inventory"
         placeholder="Search inventory"
-        autocomplete="off"
       ></input>
       <svg
         className={styles.magGlass}

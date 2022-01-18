@@ -10,12 +10,11 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <div id={styles.Home}>
-      <Searchbar id={styles.Searchbar} />
+      <Searchbar className={`test`} />
       <Filters id={styles.Filters} />
       <Deal id={styles.Deal} />
       <Inventory id={styles.Inventory} />
       <Navbar id={styles.Navbar} />
-
       {/* <h1>Home</h1>
 
       <h1>h1 Bitsox</h1>
