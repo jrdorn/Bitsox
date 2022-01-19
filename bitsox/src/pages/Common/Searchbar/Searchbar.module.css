@@ -25,13 +25,33 @@
   color: #9e9e9d;
   opacity: 1;
 }
+#search:focus {
+  outline: none;
+  border-color: rgb(107, 38, 157);
+  outline-color: currentcolor;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px inset,
+    rgba(80, 34, 181, 0.5) 0px 0px 8px;
+}
+#search:hover,
+#search:focus {
+  transition: all 0.3s ease-in-out;
+}
+
+/* purple */
+/* background-color: #6b269d; */
+
+/* pink */
+/* background-color: #cc72e2; */
+
+/* violet */
+/* background-color: #a022b5; */
 
 /* magnifying glass svg */
 .magGlass {
   fill: #6f6e6d;
   position: absolute;
   top: 1.9em;
-  left: 2.3em;
+  left: 3.5em;
   width: 1.3em;
   height: 1.3em;
   pointer-events: none;

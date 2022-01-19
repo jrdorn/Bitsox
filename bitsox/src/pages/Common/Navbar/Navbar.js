@@ -3,13 +3,31 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 //
-import AcUnitIcon from "@mui/icons-material/AcUnit";
-// import SvgIcon from "@mui/material/SvgIcon";
+// import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+// import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+// import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+// import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+
+// function Navbar() {
+//   return (
+//     <div>
+//       <HomeRoundedIcon fontSize="large" color="primary" />
+//       <PersonRoundedIcon fontSize="large" />
+//       <ShoppingCartOutlinedIcon fontSize="large" />
+//       <MenuRoundedIcon fontSize="large" />
+//     </div>
+//   );
+// }
+
+import Icon from "@mui/material/Icon";
 
 function Navbar() {
   return (
     <div>
-      <AcUnitIcon />
+      <Icon>home</Icon>
+      <Icon>person</Icon>
+      <Icon>shopping_cart</Icon>
+      <Icon>menu</Icon>
     </div>
   );
 }
