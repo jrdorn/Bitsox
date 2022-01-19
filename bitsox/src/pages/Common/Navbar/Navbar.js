@@ -2,37 +2,52 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
+//
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+// import SvgIcon from "@mui/material/SvgIcon";
+
 function Navbar() {
   return (
-    <ul id={styles.list}>
-      <Link className={styles.link} to="/">
-        {/* Home */}
-        <span class="material-icons-round">home</span>
-      </Link>
-      <Link class={styles.link} to="/profile">
-        {/* Profile */}
-        <span class="material-icons-round">person</span>
-      </Link>
-      <Link className={styles.link} to="/cart">
-        {/* Cart */}
-        <span class="material-icons-outlined">shopping_cart</span>
-      </Link>
-
-      <div>
-        {/* Hamburger menu */} <span class="material-icons-round">menu</span>
-      </div>
-      <Link className={styles.link} to="/support">
-        Support
-      </Link>
-      <Link className={styles.link} to="/about">
-        About
-      </Link>
-      <Link className={styles.link} to="/blog">
-        Blog
-      </Link>
-    </ul>
+    <div>
+      <AcUnitIcon />
+    </div>
   );
 }
+
+//
+
+// function Navbar() {
+//   return (
+//     <ul id={styles.list}>
+//       <Link className={styles.link} to="/">
+//         {/* Home */}
+//         <span className="material-icons-round">home</span>
+//       </Link>
+//       <Link className={styles.link} to="/profile">
+//         {/* Profile */}
+//         <span className="material-icons-round">person</span>
+//       </Link>
+//       <Link className={styles.link} to="/cart">
+//         {/* Cart */}
+//         <span className="material-icons-outlined">shopping_cart</span>
+//       </Link>
+
+//       <div>
+//         {/* Hamburger menu */}{" "}
+//         <span className="material-icons-round">menu</span>
+//       </div>
+//       <Link className={styles.link} to="/support">
+//         Support
+//       </Link>
+//       <Link className={styles.link} to="/about">
+//         About
+//       </Link>
+//       <Link className={styles.link} to="/blog">
+//         Blog
+//       </Link>
+//     </ul>
+//   );
+// }
 
 // function Navbar() {
 //   return (

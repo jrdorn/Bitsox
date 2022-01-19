@@ -3,6 +3,8 @@
   grid-area: Searchbar;
   margin: 1.25em;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* searchbar */

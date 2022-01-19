@@ -29,6 +29,8 @@ HTML
 
 CSS
 
+Material UI
+
 
 deploy to AWS | Heroku
 
@@ -99,6 +101,12 @@ slug- unique identifying part of a web address
 default vs named exports 
 
 finding elems online and using devtools to borrow styles
+
+breakdown, isolate, reproduce errors (className/ class for Navbar, material design icons not rendering)
+solution- MUI React UI library, install with NPM
+
+
+
 
 
 
