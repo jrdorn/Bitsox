@@ -1,72 +1,65 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
-//
-// import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
-// import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-// import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-// import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-
-// function Navbar() {
-//   return (
-//     <div>
-//       <HomeRoundedIcon fontSize="large" color="primary" />
-//       <PersonRoundedIcon fontSize="large" />
-//       <ShoppingCartOutlinedIcon fontSize="large" />
-//       <MenuRoundedIcon fontSize="large" />
-//     </div>
-//   );
-// }
-
 import Icon from "@mui/material/Icon";
+import IconButton from "@mui/material/IconButton";
+
+//color Navbar icon purple if it links to the current page
+let SyncRouteWithButton = (path) => {
+  const location = useLocation();
+  let route = location.pathname;
+
+  if (path === route) {
+    return styles.selectedIcon;
+  } else {
+    return styles.icon;
+  }
+};
 
 function Navbar() {
   return (
-    <div>
-      <Icon>home</Icon>
-      <Icon>person</Icon>
-      <Icon>shopping_cart</Icon>
-      <Icon>menu</Icon>
-    </div>
+    <nav id={styles.Navbar}>
+      {/* Home */}
+      <Link to="/">
+        <IconButton aria-label="home">
+          <Icon className={SyncRouteWithButton("/")}>home</Icon>
+        </IconButton>
+      </Link>
+
+      {/* Profile */}
+      <Link className={styles.link} to="/profile">
+        <IconButton aria-label="profile">
+          <Icon className={SyncRouteWithButton("/profile")}>person</Icon>
+        </IconButton>
+      </Link>
+
+      {/* Cart */}
+      <Link className={styles.link} to="/cart">
+        <IconButton aria-label="cart">
+          <Icon className={SyncRouteWithButton("/cart")}>shopping_cart</Icon>
+        </IconButton>
+      </Link>
+
+      {/* Hamburger */}
+      <IconButton aria-label="menu">
+        <Icon className={styles.icon}>menu</Icon>
+      </IconButton>
+
+      {/* <Link aria-label="support" to="/support">
+        Support
+      </Link>
+      <Link aria-label="about" to="/about">
+        About
+      </Link>
+      <Link aria-label="blog" to="/blog">
+        Blog
+      </Link> */}
+    </nav>
   );
 }
 
 //
-
-// function Navbar() {
-//   return (
-//     <ul id={styles.list}>
-//       <Link className={styles.link} to="/">
-//         {/* Home */}
-//         <span className="material-icons-round">home</span>
-//       </Link>
-//       <Link className={styles.link} to="/profile">
-//         {/* Profile */}
-//         <span className="material-icons-round">person</span>
-//       </Link>
-//       <Link className={styles.link} to="/cart">
-//         {/* Cart */}
-//         <span className="material-icons-outlined">shopping_cart</span>
-//       </Link>
-
-//       <div>
-//         {/* Hamburger menu */}{" "}
-//         <span className="material-icons-round">menu</span>
-//       </div>
-//       <Link className={styles.link} to="/support">
-//         Support
-//       </Link>
-//       <Link className={styles.link} to="/about">
-//         About
-//       </Link>
-//       <Link className={styles.link} to="/blog">
-//         Blog
-//       </Link>
-//     </ul>
-//   );
-// }
-
 // function Navbar() {
 //   return (
 //     <ul className={styles.list}>

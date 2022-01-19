@@ -1,11 +1,43 @@
-#list {
-  border: 1px solid blue;
+#Navbar {
+  grid-area: Navbar;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  background: #383735;
 }
 
-/* .icon {
-  color: white;
-  transition: fill 0.6s;
+.icon {
+  color: #e8e6e3;
 }
-.icon:hover {
-  color: red;
-} */
+.selectedIcon {
+  color: #6b269d;
+}
+
+/* purple */
+/* background-color: #6b269d; */
+
+/* pink */
+/* background-color: #cc72e2; */
+
+/* violet */
+/* background-color: #a022b5; */
+
+/*
+
+Currently active page
+  icon should be colored
+  "if user is on X page, Y component should be active"
+  "if user is on a page not listed in navbar (like a specific item), no components should be active"
+  slider bar should appear?
+
+
+Hamburger
+  animation
+  submenu pops up and down above main nav
+
+Lock Navbar to bottom of viewport (and Searchbar to top)
+  infinite scroll inventory
+
+*/
