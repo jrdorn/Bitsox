@@ -94,7 +94,7 @@
 
 
 
-|| Components 
+||| Components 
 
     (single-responsibility principle)
     # outline pages

@@ -4,18 +4,23 @@ import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <ul className={styles.list}>
+    <ul id={styles.list}>
       <Link className={styles.link} to="/">
-        Home
+        {/* Home */}
+        <span class="material-icons-round">home</span>
       </Link>
-      <Link className={styles.link} to="/profile">
-        Profile
+      <Link class={styles.link} to="/profile">
+        {/* Profile */}
+        <span class="material-icons-round">person</span>
       </Link>
       <Link className={styles.link} to="/cart">
-        Cart
+        {/* Cart */}
+        <span class="material-icons-outlined">shopping_cart</span>
       </Link>
 
-      <p>Begin hamburger</p>
+      <div>
+        {/* Hamburger menu */} <span class="material-icons-round">menu</span>
+      </div>
       <Link className={styles.link} to="/support">
         Support
       </Link>
@@ -25,7 +30,6 @@ function Navbar() {
       <Link className={styles.link} to="/blog">
         Blog
       </Link>
-      <p>End hamburger</p>
     </ul>
   );
 }

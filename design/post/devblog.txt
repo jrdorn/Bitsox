@@ -101,6 +101,10 @@ default vs named exports
 finding elems online and using devtools to borrow styles
 
 
+
+
+
+
 Structuring:  
 
     React container 
@@ -139,9 +143,6 @@ Structuring:
 
      #Server
 
-
-
-|| Unexpected events while building
 
 
 

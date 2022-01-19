@@ -1,0 +1,56 @@
+90/ 30 
+
+
+
+|| 1/19
+
+    Yesterday
+
+        Unexpected challenges?
+            material design icons not rendering properly
+            svg, png, CDN, self-hosting
+            goal is smooth color transitions on hover
+
+        Progress    
+            Searchbar UI
+            Filters UI 
+            Deal UI
+            Home grid layout
+
+    What problems to solve 
+        render material design icons
+        Navbar 
+        Item UI
+        UI mock for About
+
+    How to solve them
+        CSS grid
+
+    Prioritize
+        Material design icons
+        UI Components
+
+    Potential roadblocks
+        Material design implementation challenges (css/ js smooth animation)
+
+    How to handle them
+        Try each method (svg/png/cdn/self), if not a good fit then fall back to 
+            text links or explore alternative icons
+
+
+
+|| 1/20
+
+    Yesterday
+
+        Unexpected challenges?
+
+        Progress
+
+    What problems to solve 
+
+    How to solve them
+
+    Potential roadblocks
+
+    How to handle them

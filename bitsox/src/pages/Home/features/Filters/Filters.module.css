@@ -14,4 +14,8 @@
   text-decoration: none;
   color: inherit;
   font-size: 1rem;
+  transition: color 0.6s;
+}
+.afilter a:hover {
+  color: #cc72e2;
 }

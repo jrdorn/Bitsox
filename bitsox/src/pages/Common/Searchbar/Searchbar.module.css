@@ -20,13 +20,13 @@
   max-width: 405px;
 }
 #search::placeholder {
-  color: #f6f6f6;
+  color: #9e9e9d;
   opacity: 1;
 }
 
 /* magnifying glass svg */
 .magGlass {
-  fill: #f6f6f6;
+  fill: #6f6e6d;
   position: absolute;
   top: 1.9em;
   left: 2.3em;

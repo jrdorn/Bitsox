@@ -1,3 +1,5 @@
-.bg {
-  border: 5px solid yellow;
+#Deal {
+  grid-area: Deal;
+  background-color: #383735;
+  height: 10em;
 }

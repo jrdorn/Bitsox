@@ -10,9 +10,9 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <div id={styles.Home}>
-      <Searchbar className={`test`} />
-      <Filters id={styles.Filters} />
-      <Deal id={styles.Deal} />
+      <Searchbar />
+      <Filters />
+      <Deal />
       <Inventory id={styles.Inventory} />
       <Navbar id={styles.Navbar} />
       {/* <h1>Home</h1>
