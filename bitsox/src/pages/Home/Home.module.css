@@ -8,10 +8,6 @@
   /* grid-template-rows: auto auto 1fr auto; */
 }
 
-#Filters {
-  grid-area: Filters;
-}
-
 #Deal {
   grid-area: Deal;
 }

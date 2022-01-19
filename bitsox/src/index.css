@@ -7,6 +7,22 @@
 body {
   /* off-black */
   background-color: #282828;
+  /* background-image: linear-gradient(
+    to right bottom,
+    #191919,
+    #1c1c1c,
+    #1f1f1f,
+    #222222,
+    #252525,
+    #282828,
+    #2a2a2a,
+    #2d2d2d,
+    #303030,
+    #323232,
+    #353535,
+    #383838
+  ); */
+  image-rendering: crisp-edges;
   min-height: 100vh;
 }
 
