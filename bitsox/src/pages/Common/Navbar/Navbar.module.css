@@ -5,19 +5,48 @@
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding: 0.3em;
+  justify-content: center;
+
+  /* border: 5px solid salmon; */
+
   padding-left: 1.25em;
   padding-right: 1.25em;
   background: #383735;
 }
 
-.icon {
+/* tab spacing */
+.allTabs {
+  width: 100%;
+}
+.allTabs div div {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (min-width: 700px) {
+  .allTabs div div {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+@media (min-width: 980px) {
+  .allTabs div div {
+    margin-left: 12em;
+    margin-right: 12em;
+  }
+}
+@media (min-width: 1200) {
+  .allTabs div div {
+    margin-left: 25em;
+    margin-right: 25em;
+  }
+}
+/* .icon {
   color: #e8e6e3;
 }
 .selectedIcon {
   color: #9c27b0;
-}
+} */
 
 /* purple */
 /* background-color: #6b269d; */

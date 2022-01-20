@@ -4,10 +4,9 @@ import styles from "./Filters.module.css";
 //briefly flash violet on clicking a Filter
 let highlight = (name) => {
   let Filter = document.getElementById(name);
-  let original = Filter.style.color;
   Filter.style.color = "#a022b5";
   setTimeout(() => {
-    Filter.style.color = original;
+    Filter.style.color = "#a19f9c";
   }, 500);
 };
 

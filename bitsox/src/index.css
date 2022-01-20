@@ -100,11 +100,8 @@ p {
 
 /*
 
-    1. finish UI mock components and complete responsive layout for Home, verify on multiple browsers 
-      c. navbar
-      d. inventory
 
-    2. render different pages without refreshing the screen 
+    2. Navbar- render different pages without refreshing the screen 
     3. move on to About mock UI and other pages (should go much faster since the Common
         components, Searchbar and Navbar, will be done)
 

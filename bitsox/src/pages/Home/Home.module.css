@@ -3,23 +3,7 @@
 #Home {
   display: grid;
   gap: 1em;
-  /* grid-template-areas: "Searchbar" "Filters" "Deal" "Inventory" "Navbar"; */
   grid-template-areas: "Deal" "Inventory";
   grid-template-columns: 100%;
   /* grid-template-rows: auto auto 1fr auto; */
-}
-
-#Inventory {
-  grid-area: Inventory;
-}
-
-#Navbar {
-  grid-area: Navbar;
-  /* position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1.5em;
-  display: flex;
-  justify-content: center;
-  background-color: inherit; */
 }

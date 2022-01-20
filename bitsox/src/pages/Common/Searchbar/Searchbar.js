@@ -4,8 +4,12 @@ import styles from "./Searchbar.module.css";
 function Searchbar() {
   return (
     <form id={styles.Searchbar} role="search" action="/search">
-      <img alt="Bitsox" id={styles.logo} src={require("./logo.png")} />
-      <h2 id={styles.title}>Bitsox</h2>
+      <a id={styles.logo} href="/">
+        <img alt="Bitsox" id={styles.logo} src={require("./logo.png")} />
+      </a>
+      <a href="/">
+        <h2 id={styles.title}>Bitsox</h2>
+      </a>
       <input
         type="search"
         id={styles.search}

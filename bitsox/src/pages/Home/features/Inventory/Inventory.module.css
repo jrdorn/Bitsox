@@ -1,4 +1,33 @@
-.bg {
-  margin-top: 7em;
+#Inventory {
   background-color: grey;
+
+  /* border: 2px solid wheat;
+  border-radius: 5px; */
+
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+
+  margin-bottom: 3.5em;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+@media (min-width: 777px) {
+  #Inventory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  border: 2px solid bisque;
+  border-radius: 5px;
+
+  background-color: oldlace;
+  color: darkslateblue;
+
+  padding: 0.5em;
+  margin: 0.25em;
+
+  width: 220px;
+  height: 260px;
 }

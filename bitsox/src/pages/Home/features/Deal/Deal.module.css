@@ -1,6 +1,7 @@
 #Deal {
+  /* border: 1px solid teal; */
   grid-area: Deal;
-  margin-top: 10em;
+  margin-top: 7.8em;
   background-color: #383735;
   height: 10em;
 }
