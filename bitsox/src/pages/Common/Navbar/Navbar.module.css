@@ -1,7 +1,11 @@
 #Navbar {
   grid-area: Navbar;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0.3em;
   padding-left: 1.25em;
   padding-right: 1.25em;
@@ -26,7 +30,12 @@
 
 /*
 
+Lock Navbar to bottom of viewport
+Searchbar and filters to top
+Infinite scroll inventory
+
 Fix MUI tabs
+  ERR: button cannot appear as a descendant of buttom 
   animation between pages
   click on outer edges and register that
 
@@ -35,7 +44,6 @@ Hamburger
   animation
   submenu pops up and down above main nav
 
-Lock Navbar to bottom of viewport (and Searchbar to top)
-  infinite scroll inventory
+
 
 */
