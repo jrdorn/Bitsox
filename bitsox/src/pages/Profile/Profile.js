@@ -1,6 +1,7 @@
 import React from "react";
 
 import Searchbar from "../Common/Searchbar/Searchbar";
+import Filters from "../Common/Filters/Filters";
 import Auth from "./features/Auth/Auth";
 import Update from "./features/Update/Update";
 import Wishlist from "./features/Wishlist/Wishlist";
@@ -12,6 +13,7 @@ function Profile() {
   return (
     <div id="Profile">
       <Searchbar />
+      <Filters />
       <Auth />
       <Update />
       <Wishlist />

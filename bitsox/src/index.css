@@ -101,21 +101,27 @@ p {
 /*
 
 
-    2. Navbar- render different pages without refreshing the screen 
-    3. move on to About mock UI and other pages (should go much faster since the Common
+    2. Handle routing and Navbar- render different pages without refreshing the screen 
+
+        window.history.pushState("object or string", "Title", "/new-url");
+
+        also if user types '_/profile' while on '_/' it should navigate without refreshing the page
+
+
+    3.  Hamburger submenu
+          above main man
+          animation
+
+    4. move on to About mock UI and other pages (should go much faster since the Common
         components, Searchbar and Navbar, will be done)
 
 
-  Place logo somewhere on page- above/ beside Searchbar
+        
 
 
-Change route without page refresh
-window.history.pushState("object or string", "Title", "/new-url");
 
 
-  Hamburger submenu
-    above main man
-    animation
+
 
 
 

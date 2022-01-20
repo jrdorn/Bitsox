@@ -1,6 +1,6 @@
 import React from "react";
 import Searchbar from "../Common/Searchbar/Searchbar";
-import Filters from "./features/Filters/Filters";
+import Filters from "../Common/Filters/Filters";
 import Deal from "./features/Deal/Deal";
 import Inventory from "./features/Inventory/Inventory";
 import Navbar from "../Common/Navbar/Navbar";
@@ -13,8 +13,8 @@ function Home() {
       <Searchbar />
       <Filters />
       <Deal />
-      <Inventory id={styles.Inventory} />
-      <Navbar id={styles.Navbar} />
+      <Inventory />
+      <Navbar />
       {/* <h1>Home</h1>
 
       <h1>h1 Bitsox</h1>
