@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 import Icon from "@mui/material/Icon";
 import IconButton from "@mui/material/IconButton";
+
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 
 //color Navbar icon purple if it links to the current page
 let SyncRouteWithButton = (path) => {
@@ -18,33 +21,65 @@ let SyncRouteWithButton = (path) => {
 };
 
 function Navbar() {
+  const [val, setValue] = React.useState(0);
+
+  const changeTab = (e, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <nav id={styles.Navbar}>
-      {/* Home */}
-      <Link to="/">
-        <IconButton aria-label="home">
-          <Icon className={SyncRouteWithButton("/")}>home</Icon>
-        </IconButton>
-      </Link>
+      <Tabs
+        value={val}
+        onChange={changeTab}
+        textColor="secondary"
+        indicatorColor="secondary"
+        aria-label="Navbar"
+      >
+        {/* Home */}
+        <Tab
+          label={
+            <Link to="/">
+              <IconButton aria-label="home">
+                <Icon className={SyncRouteWithButton("/")}>home</Icon>
+              </IconButton>
+            </Link>
+          }
+        />
 
-      {/* Profile */}
-      <Link className={styles.link} to="/profile">
-        <IconButton aria-label="profile">
-          <Icon className={SyncRouteWithButton("/profile")}>person</Icon>
-        </IconButton>
-      </Link>
+        {/* Profile */}
+        <Tab
+          label={
+            <Link to="/profile">
+              <IconButton aria-label="profile">
+                <Icon className={SyncRouteWithButton("/profile")}>person</Icon>
+              </IconButton>
+            </Link>
+          }
+        />
 
-      {/* Cart */}
-      <Link className={styles.link} to="/cart">
-        <IconButton aria-label="cart">
-          <Icon className={SyncRouteWithButton("/cart")}>shopping_cart</Icon>
-        </IconButton>
-      </Link>
+        {/* Cart */}
+        <Tab
+          label={
+            <Link to="/cart">
+              <IconButton aria-label="cart">
+                <Icon className={SyncRouteWithButton("/cart")}>
+                  shopping_cart
+                </Icon>
+              </IconButton>
+            </Link>
+          }
+        />
 
-      {/* Hamburger */}
-      <IconButton aria-label="menu">
-        <Icon className={styles.icon}>menu</Icon>
-      </IconButton>
+        {/* Hamburger */}
+        <Tab
+          label={
+            <IconButton aria-label="menu">
+              <Icon className={styles.icon}>menu</Icon>
+            </IconButton>
+          }
+        />
+      </Tabs>
 
       {/* <Link aria-label="support" to="/support">
         Support

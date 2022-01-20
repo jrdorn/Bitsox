@@ -12,7 +12,7 @@
   color: #e8e6e3;
 }
 .selectedIcon {
-  color: #6b269d;
+  color: #9c27b0;
 }
 
 /* purple */
@@ -26,11 +26,9 @@
 
 /*
 
-Currently active page
-  icon should be colored
-  "if user is on X page, Y component should be active"
-  "if user is on a page not listed in navbar (like a specific item), no components should be active"
-  slider bar should appear?
+Fix MUI tabs
+  animation between pages
+  click on outer edges and register that
 
 
 Hamburger

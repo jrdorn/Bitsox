@@ -95,6 +95,8 @@
 
 
 ||| Components 
+    
+    ?modal windows?
 
     (single-responsibility principle)
     # outline pages
