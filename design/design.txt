@@ -97,6 +97,7 @@
 ||| Components 
     
     ?modal windows?
+        warnings- confirm leave page if items in cart
 
     (single-responsibility principle)
     # outline pages

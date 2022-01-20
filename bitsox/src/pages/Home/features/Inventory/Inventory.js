@@ -22,7 +22,7 @@ function Inventory() {
         caelo, mari, terra, ut poëtice loquar, praetermissa sit; Res enim se
         praeclare habebat, et quidem in utraque parte.{" "}
       </p>
-
+      {/* 
       <p>
         Voluptatis causa, etiam si eam non consequare, aut non dolendi, etiam si
         id assequi nequeas, aut eorum, quae secundum naturam sunt, adipiscendi,
@@ -82,7 +82,7 @@ function Inventory() {
         Omniaque e latis rerum vestigia terris. Et ille ridens: Age, age,
         inquit,-satis enim scite me nostri sermonis principium esse
         voluisti-exponamus adolescenti,.{" "}
-      </p>
+      </p> */}
     </div>
   );
 }

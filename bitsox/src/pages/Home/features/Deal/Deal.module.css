@@ -1,5 +1,6 @@
 #Deal {
   grid-area: Deal;
+  margin-top: 10em;
   background-color: #383735;
   height: 10em;
 }
