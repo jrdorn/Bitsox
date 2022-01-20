@@ -4,12 +4,15 @@ import styles from "./Searchbar.module.css";
 function Searchbar() {
   return (
     <form id={styles.Searchbar} role="search" action="/search">
+      <img alt="Bitsox" id={styles.logo} src={require("./logo.png")} />
+      <h2 id={styles.title}>Bitsox</h2>
       <input
         type="search"
         id={styles.search}
         name="search"
         aria-label="Search inventory"
         placeholder="Search inventory"
+        autoComplete="off"
       ></input>
       <svg
         className={styles.magGlass}

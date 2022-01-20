@@ -49,7 +49,7 @@ html {
 html {
   color: #e8e6e3; /* off-white */
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -97,6 +97,40 @@ p {
   font-weight: 300;
   font-size: 1rem;
 }
+
+/*
+
+    1. finish UI mock components and complete responsive layout for Home, verify on multiple browsers 
+      a. searchbar
+      b. filters
+      c. navbar
+      d. inventory
+
+    2. render different pages without refreshing the screen 
+    3. move on to About mock UI and other pages (should go much faster since the Common
+        components, Searchbar and Navbar, will be done)
+
+
+  Place logo somewhere on page- above/ beside Searchbar
+
+
+Change route without page refresh
+window.history.pushState("object or string", "Title", "/new-url");
+
+
+  Hamburger submenu
+    above main man
+    animation
+
+
+
+
+
+
+
+
+
+*/
 
 /* lighter black */
 /* background-color: #2e2c2a; */

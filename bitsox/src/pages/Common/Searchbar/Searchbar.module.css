@@ -3,14 +3,41 @@
   grid-area: Searchbar;
   overflow: hidden;
   position: fixed;
-  /* border: 1px solid teal; */
   background-color: #282828;
   top: 0;
   width: 100%;
   padding: 1.25em;
-  margin-bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
+  /* border: 1px solid teal; */
+}
+
+/* main Bitsox logo */
+#logo {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  top: 0.1em;
+  margin-right: auto;
+
+  /* border: 1px solid salmon; */
+}
+
+/* title to display on tablet and desktop */
+#title {
+  /* display: none; */
+  color: #a022b5;
+  position: absolute;
+  top: -0.2em;
+  left: 2.35em;
+
+  /* border: 1px solid salmon; */
+}
+@media (max-width: 605px) {
+  #title {
+    display: none;
+  }
 }
 
 /* searchbar */
@@ -21,15 +48,19 @@
   background-color: #383735;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
+
+  /* border: 1px solid salmon; */
+
   border-radius: 0.5em;
   padding: 0.7em;
-  padding-inline-start: 3.1em;
+  padding-inline-start: 1.1em;
   width: 100%;
   max-width: 405px;
+  margin-left: 1.3em;
 }
 #search::placeholder {
   color: #9e9e9d;
-  opacity: 1;
+  opacity: 0.6;
 }
 #search:focus {
   outline: none;
@@ -42,23 +73,43 @@
 #search:focus {
   transition: all 0.3s ease-in-out;
 }
-
-/* purple */
-/* background-color: #6b269d; */
-
-/* pink */
-/* background-color: #cc72e2; */
-
-/* violet */
-/* background-color: #a022b5; */
+/* remove webkit default search styles */
+#search::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#search::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#search::-webkit-search-decoration,
+#search::-webkit-search-cancel-button,
+#search::-webkit-search-results-button,
+#search::-webkit-search-results-decoration {
+  display: none;
+}
 
 /* magnifying glass svg */
 .magGlass {
   fill: #6f6e6d;
-  position: absolute;
-  top: 1.9em;
-  left: 3.5em;
+  position: fixed;
+  top: 2em;
+  right: 2.4em;
   width: 1.3em;
   height: 1.3em;
   pointer-events: none;
+  z-index: 3;
 }
+
+/*
+1.25 em left and right margins
+
+align logo to the left
+
+align Searchbar with mag glass to the right
+set min-max Searchbar width 
+
+overlay Features on Searchbar when screen width allows
+*/

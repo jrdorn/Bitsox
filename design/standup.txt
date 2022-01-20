@@ -1,4 +1,4 @@
-90/ 30 
+90/15 Pomodoro 
 
 
 
@@ -43,13 +43,77 @@
 
     Yesterday
 
-        Unexpected challenges?
-
         Progress
+            Searchbar: center, custom border on focus
+            Navbar: sync route with buttons, Material UI icons, color scheme
+            Lock Searchbar to top and Navbar to bottom of viewport
+
+        Unexpected challenges?
+            positioning logo and magnifying glass icon for responsive Searchbar 
+            using tabs for Navbar: I want to use the indicator animation
+                when switching tabs, but going to new route refreshes the page 
+
+    What problems to solve 
+        1. render different pages without refreshing the screen 
+        2. finish UI mock components and complete responsive layout for Home, verify on multiple browsers 
+        3. move on to About mock UI and other pages (should go much faster since the Common
+            components, Searchbar and Navbar, will be done)
+
+    How to solve them
+        1. possibly abandon React-Router, except for pages that don't use Searchbar + Navbar 
+            onClick [ Navbar element, inventory item ], change URL and change component display 
+        2. production color scheme, and dummy box components that mimick production specs (e.g. boxes for inventory
+            items that could be stored in MongoDB)
+            verify against websites with quality design (Stackoverflow, Uniswap, Amazon)
+        3. follow same patterns as Home mockup
+
+    Potential roadblocks
+        1. unforseen consequences of avoiding Router- keeping state together for multiple pages
+        2. settling on an aesthetically pleasing layout for Searchbar, and implementing 
+            logo and magnifying glass on top of fixed area  
+
+    How to handle them
+        1. update mental model - app as not just components that belong to pages, but sea of components 
+            swimming together that are tied to each other by actions. So for the "pages" that will
+            render by clicking Navbar tabs, the user will experience it as multiple pages, but they 
+            could also be thought of as rendering a single page and swapping out some components for others 
+        2. review inspiration sites, use devtools to see how they implemented their searchbars and top navbars 
+
+
+
+|| 1/21
+
+    Yesterday
+
+        Progress    
+
+        Unexpected challenges?
 
     What problems to solve 
 
     How to solve them
+
+    Prioritize
+
+    Potential roadblocks
+
+    How to handle them
+
+
+
+|| 1/22
+
+    Yesterday
+
+        Progress    
+
+        Unexpected challenges?
+
+    What problems to solve 
+
+    How to solve them
+
+    Prioritize
 
     Potential roadblocks
 
