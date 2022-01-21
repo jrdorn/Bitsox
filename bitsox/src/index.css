@@ -100,8 +100,10 @@ p {
 
 /*
 
+!!Save in devblog
 
-    2. Handle routing and Navbar- render different pages without refreshing the screen 
+
+    1. Handle routing and Navbar- render different pages without refreshing the screen 
 
         window.history.pushState("object or string", "Title", "/new-url");
 
@@ -127,17 +129,17 @@ p {
         Redirect '/' to 'home'
         Change 'Home' to something related to site purpose, like just 'socks'
         Name and organize Common folder and components, add .js and .css (Root? App? Main?)
-        
 
 
 
 
 
-    3.  Hamburger submenu
+
+    2.  Hamburger submenu
           above main man
           animation
 
-    4. move on to About mock UI and other pages (should go much faster since the Common
+    3. move on to About mock UI and other pages (should go much faster since the Common
         components, Searchbar and Navbar, will be done)
 
 

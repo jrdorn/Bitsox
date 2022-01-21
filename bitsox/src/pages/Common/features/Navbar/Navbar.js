@@ -6,14 +6,8 @@ import Icon from "@mui/material/Icon";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 
-//
-//
-//
 import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as SocksSolid } from "./socks-solid.svg";
-//
-//
-//
 
 //handle tab routing
 let LinkTab = (props) => {

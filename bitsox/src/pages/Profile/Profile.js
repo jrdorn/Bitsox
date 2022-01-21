@@ -4,7 +4,7 @@ import Auth from "./features/Auth/Auth";
 import Update from "./features/Update/Update";
 import Wishlist from "./features/Wishlist/Wishlist";
 
-import "./Profile.css";
+import "./Profile.module.css";
 
 function Profile() {
   return (

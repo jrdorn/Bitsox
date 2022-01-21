@@ -1,19 +1,19 @@
 import React from "react";
 
-import Searchbar from "../Common/Searchbar/Searchbar";
+// import Searchbar from "../Common/Searchbar/Searchbar";
 import Proceed from "./features/Proceed/Proceed";
 import CartItem from "./features/CartItem/CartItem";
-import Navbar from "../Common/Navbar/Navbar";
+// import Navbar from "../Common/Navbar/Navbar";
 
-import "./Cart.css";
+import "./Cart.module.css";
 
 function Cart() {
   return (
     <div id="Cart">
-      <Searchbar />
+      {/* <Searchbar /> */}
       <Proceed />
       <CartItem />
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 }

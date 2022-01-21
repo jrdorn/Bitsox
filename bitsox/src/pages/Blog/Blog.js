@@ -1,17 +1,17 @@
 import React from "react";
 
-import Searchbar from "../Common/Searchbar/Searchbar";
+// import Searchbar from "../Common/Searchbar/Searchbar";
 import BlogPost from "./features/BlogPost/BlogPost";
-import Navbar from "../Common/Navbar/Navbar";
+// import Navbar from "../Common/Navbar/Navbar";
 
-import "./Blog.css";
+import "./Blog.module.css";
 
 function Blog() {
   return (
     <div id="Blog">
-      <Searchbar />
+      {/* <Searchbar /> */}
       <BlogPost />
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 }

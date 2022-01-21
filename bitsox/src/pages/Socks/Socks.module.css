@@ -1,6 +1,10 @@
 /* || Grid Layout */
 
-#Home {
+.Page {
+  grid-area: Page;
+}
+
+#Socks {
   display: grid;
   gap: 1em;
   grid-template-areas: "Deal" "Inventory";

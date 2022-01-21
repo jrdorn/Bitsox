@@ -86,6 +86,44 @@
     Yesterday
 
         Progress    
+            Responsive Searchbar, logo, Filters 
+            Filters onClick animation 
+            Mock UI's for Inventory and Deal components 
+            Move Filter component to Common folder to share with all pages 
+            Replace Home icon in Navbar with Socks, and outline new subroutes
+
+        Unexpected challenges?
+            exploring routing solutions. Wanting to click Navbar icons to go to new pages with unique URLs
+                without refreshing the page. Multiple incomplete Routerv5 solutions, but Routerv6 allows nested Routes
+                which greatly speeds up implementation. 
+            deciding to change Home page to Socks store page and think of Searchbar-Filters-Navbar as its own "template"
+                page and route at '/' that overlays every page except for Checkout
+
+    What problems to solve 
+        1. Complete renaming components and pages for new route architecture, add new nested routes 
+        2. Navbar Hamburger submenu with nested routes
+        3. Mock UI for all page components
+
+    How to solve them
+        1. Follow React Router v6 API docs and search Stackoverflow for clarification/ troubleshooting
+        2. Find existing website that already has the submenu design and animation I want, use devtools to borrow key elements, implement animation with JavaScript
+        3. Use CSS grid to layout elements based on Keynote wireframes 
+
+    Prioritize
+        Order listed above
+
+    Potential roadblocks
+        Time cost of finding the right design and animation
+
+    How to handle them
+        Mindfulness of how much time I spend choosing a design
+
+
+|| 1/22
+
+    Yesterday
+
+        Progress    
 
         Unexpected challenges?
 
@@ -101,7 +139,7 @@
 
 
 
-|| 1/22
+|| 1/23
 
     Yesterday
 

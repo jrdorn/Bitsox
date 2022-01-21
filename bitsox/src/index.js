@@ -9,13 +9,17 @@ import { Provider } from "react-redux";
 //Routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
+import Common from "./pages/Common/Common";
+
+import Socks from "./pages/Socks/Socks";
+import Profile from "./pages/Profile/Profile";
+import Cart from "./pages/Cart/Cart";
+
 import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
-import Cart from "./pages/Cart/Cart";
-import Checkout from "./pages/Checkout/Checkout";
-import Profile from "./pages/Profile/Profile";
 import Support from "./pages/Support/Support";
+
+import Checkout from "./pages/Checkout/Checkout";
 
 // import * as serviceWorker from "./serviceWorker";
 
@@ -29,8 +33,8 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="home" element={<Home />} />
+          <Route path="/" element={<Common />}>
+            <Route path="socks" element={<Socks />} />
             <Route path="profile" element={<Profile />} />
           </Route>
 

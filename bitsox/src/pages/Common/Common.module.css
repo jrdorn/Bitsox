@@ -1,0 +1,9 @@
+/* || Grid Layout */
+
+#Common {
+  display: grid;
+  gap: 1em;
+  grid-template-areas: "Deal" "Page" "Inventory";
+  grid-template-columns: 100%;
+  /* grid-template-rows: auto auto 1fr auto; */
+}
