@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Outlet } from "react-router-dom";
+
 import Searchbar from "./features/Searchbar/Searchbar";
 import Filters from "./features/Filters/Filters";
 import Navbar from "./features/Navbar/Navbar";
@@ -11,6 +13,8 @@ function Common() {
     <div id={styles.Common}>
       <Searchbar />
       <Filters />
+
+      <Outlet />
 
       <Navbar />
     </div>

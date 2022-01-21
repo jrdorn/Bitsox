@@ -35,7 +35,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Common />}>
             <Route path="socks" element={<Socks />} />
-            <Route path="profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile />} />
           </Route>
 
           <Route path="/cart" element={<Cart />} />
