@@ -29,13 +29,18 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}>
+            <Route path="home" element={<Home />} />
+            <Route path="profile" element={<Profile />} />
+          </Route>
+
+          <Route path="/cart" element={<Cart />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
           <Route path="/support" element={<Support />} />
+
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
     </Provider>

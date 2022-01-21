@@ -13,6 +13,7 @@ function Home() {
       <Searchbar />
       <Filters />
       <Deal />
+
       <Inventory />
       <Navbar />
       {/* <h1>Home</h1>
