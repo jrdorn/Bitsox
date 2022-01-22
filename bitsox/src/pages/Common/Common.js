@@ -14,6 +14,7 @@ function Common() {
       <Searchbar />
       <Filters />
 
+      {/* render nested routes */}
       <Outlet />
 
       <Navbar />

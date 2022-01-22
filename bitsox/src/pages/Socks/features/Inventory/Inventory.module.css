@@ -7,7 +7,7 @@
   padding-left: 1.25em;
   padding-right: 1.25em;
 
-  margin-bottom: 3.5em;
+  margin-bottom: 1.25em;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -34,15 +34,15 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Common />}>
-            <Route path="socks" element={<Socks />} />
+            <Route index element={<Socks />} />
             <Route path="/profile" element={<Profile />} />
+
+            <Route path="/cart" element={<Cart />} />
+
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/support" element={<Support />} />
           </Route>
-
-          <Route path="/cart" element={<Cart />} />
-
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/support" element={<Support />} />
 
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
