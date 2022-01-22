@@ -111,7 +111,22 @@ Filters (want to change color on select): onClick function being fired on render
 making design decisions and tradeoffs
     color scheme for material UI navbar icons, using preset vs implementing custom 
 
-
+*
+Handle routing and Navbar- render different pages without refreshing the screen 
+        window.history.pushState("object or string", "Title", "/new-url");
+        also if user types '_/profile' while on '_/' it should navigate without refreshing the page
+          or, let it refresh the page but make sure the correct Tab is highlighted
+        when a Route is matched, the loaded component does unmount
+        maybe new architecture: 
+          Root page
+            render grid, Searchbar, Filters, [Page], Navbar
+              [Home, Profile, Cart, About, Blog, Support]
+          Checkout page
+        May have found incredibly easy solution: React Router v6 nested routes
+        Redirect '/' to 'home'
+        Change 'Home' to something related to site purpose, like just 'socks'
+        Name and organize Common folder and components, add .js and .css (Root? App? Main?)
+*
 
 
 

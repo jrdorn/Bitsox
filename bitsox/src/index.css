@@ -100,50 +100,33 @@ p {
 
 /*
 
-!!Save in devblog
 
-
-    1. Handle routing and Navbar- render different pages without refreshing the screen 
-
-        window.history.pushState("object or string", "Title", "/new-url");
-
-        also if user types '_/profile' while on '_/' it should navigate without refreshing the page
-          or, let it refresh the page but make sure the correct Tab is highlighted
-
-
-        when a Route is matched, the loaded component does unmount
-
-
-        maybe new architecture: 
-
-          Root page
-            render grid, Searchbar, [Page], Filters, Navbar
-              [Home, Profile, Cart, About, Blog, Support]
-
-          Checkout page
-
-
-
-        May have found incredibly easy solution: React Router v6 nested routes
-        
-        Redirect '/' to 'home'
-        Change 'Home' to something related to site purpose, like just 'socks'
-        Name and organize Common folder and components, add .js and .css (Root? App? Main?)
-
-
-
-
-
-
-    2.  Hamburger submenu
+    2.  X Hamburger submenu
           above main man
-          animation
+          animation X
+
+         X only display on mobile?
+            add icons for About, Support, and Blog for desktop
+          make sure when you click Hamburger on another page (root, Profile, Cart)
+            that the indicator bar slides back to the current pageX
+
+        Another solution:
+          new or repurposed page with new icon
+          Support, About, and Blog are nested routes of this
+          Help&Info page, with ? icon
+
+          [?]
+          import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+
 
     3. move on to About mock UI and other pages (should go much faster since the Common
         components, Searchbar and Navbar, will be done)
 
 
         
+
+
+
 
 
 
