@@ -102,12 +102,10 @@ p {
 
 
 
-    1.    HelpCenter page with new icon
-          Support, About, and Blog are nested routes of this
-          Help&Info page, with ? icon
+    1. HelpCenter mock UI and routes
 
-          [?]
-          import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+    2. Make Navbar routes functional
+
 
 
     2. move on to About mock UI and other pages (should go much faster since the Common

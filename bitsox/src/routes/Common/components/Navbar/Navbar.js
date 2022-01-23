@@ -61,8 +61,12 @@ function Navbar() {
           href="/cart"
         />
 
-        {/* Hamburger */}
-        <LinkTab aria-label="menu" label={<Icon>menu</Icon>} href="/menu" />
+        {/* HelpCenter */}
+        <LinkTab
+          aria-label="help_center"
+          label={<Icon>help_center</Icon>}
+          href="/help_center"
+        />
       </Tabs>
 
       {/* <Link aria-label="support" to="/support">
@@ -77,5 +81,6 @@ function Navbar() {
     </nav>
   );
 }
+// import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 
 export default Navbar;

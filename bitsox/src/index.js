@@ -15,10 +15,9 @@ import Root from "./routes/Common/routes/Root/Root";
 import Profile from "./routes/Common/routes/Profile/Profile";
 import Cart from "./routes/Common/routes/Cart/Cart";
 
-// import HelpCenter
+import HelpCenter from "./routes/Common/routes/HelpCenter/HelpCenter";
 import About from "./routes/Common/routes/HelpCenter/routes/About/About";
 import Blog from "./routes/Common/routes/HelpCenter/routes/Blog/Blog";
-import Support from "./routes/Common/routes/HelpCenter/routes/Support/Support";
 
 import Checkout from "./routes/Checkout/Checkout";
 
@@ -26,6 +25,9 @@ import Checkout from "./routes/Checkout/Checkout";
 
 /*
  * Config ecommerce backend- inventory
+
+
+path="help_center"
  */
 
 ReactDOM.render(
@@ -35,13 +37,13 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Common />}>
             <Route index element={<Root />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="profile" element={<Profile />} />
 
-            <Route path="/cart" element={<Cart />} />
+            <Route path="cart" element={<Cart />} />
 
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/support" element={<Support />} />
+            <Route path="/help_center" element={<HelpCenter />} />
           </Route>
 
           <Route path="/checkout" element={<Checkout />} />
