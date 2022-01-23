@@ -8,7 +8,7 @@ import styles from "./Root.module.css";
 
 function Root() {
   return (
-    <div id={styles.Socks} className="Page">
+    <div id={styles.Root} className="Page">
       <Deal />
       <Inventory />
     </div>

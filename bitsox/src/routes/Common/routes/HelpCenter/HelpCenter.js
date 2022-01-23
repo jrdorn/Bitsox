@@ -5,11 +5,11 @@ import Contact from "./components/Contact/Contact";
 
 // import { Link } from "react-router-dom";
 
-import "./HelpCenter.module.css";
+import styles from "./HelpCenter.module.css";
 
 function HelpCenter() {
   return (
-    <div id="HelpCenter">
+    <div id={styles.HelpCenter}>
       <Info />
       <Contact />
       {/* <Link to="/">Link</Link> */}

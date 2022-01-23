@@ -4,7 +4,7 @@
   grid-area: Page;
 }
 
-#Socks {
+#Root {
   display: grid;
   gap: 1em;
   grid-template-areas: "Deal" "Inventory";
