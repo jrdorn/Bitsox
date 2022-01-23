@@ -9,18 +9,8 @@ import Tabs from "@mui/material/Tabs";
 import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as SocksSolid } from "./socks-solid.svg";
 
-//handle tab routing
-let LinkTab = (props) => {
-  return (
-    <Tab
-      component="a"
-      onClick={(e) => {
-        e.preventDefault();
-      }}
-      {...props}
-    />
-  );
-};
+//
+import { Link } from "react-router-dom";
 
 function Navbar() {
   //keep track of current selected tab
@@ -41,31 +31,35 @@ function Navbar() {
         aria-label="Navbar"
       >
         {/* Home */}
-        <LinkTab
+        <Tab
           aria-label="home"
           label={<SvgIcon component={SocksSolid} inheritViewBox />}
-          href="/"
+          component={Link}
+          to="/"
         />
 
         {/* Profile */}
-        <LinkTab
+        <Tab
           aria-label="profile"
           label={<Icon>person</Icon>}
-          href="/profile"
+          component={Link}
+          to="/profile"
         />
 
         {/* Cart */}
-        <LinkTab
+        <Tab
           aria-label="cart"
           label={<Icon>shopping_cart</Icon>}
-          href="/cart"
+          component={Link}
+          to="/cart"
         />
 
         {/* HelpCenter */}
-        <LinkTab
+        <Tab
           aria-label="help_center"
           label={<Icon>help_center</Icon>}
-          href="/help_center"
+          component={Link}
+          to="/help_center"
         />
       </Tabs>
 

@@ -29,3 +29,14 @@ export default Root;
 <div>
   <Counter />
 */
+
+{
+  /* <Link
+  to={{
+    pathname: "/courses",
+    search: "?sort=name",
+    hash: "#the-hash",
+    state: { fromDashboard: true },
+  }}
+/>; */
+}

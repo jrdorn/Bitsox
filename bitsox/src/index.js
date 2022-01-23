@@ -41,9 +41,10 @@ ReactDOM.render(
 
             <Route path="cart" element={<Cart />} />
 
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/help_center" element={<HelpCenter />} />
+            <Route path="help_center" element={<HelpCenter />}>
+              <Route path="about" element={<About />} />
+              <Route path="blog" element={<Blog />} />
+            </Route>
           </Route>
 
           <Route path="/checkout" element={<Checkout />} />
