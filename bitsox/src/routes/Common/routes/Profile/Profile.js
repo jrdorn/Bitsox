@@ -1,8 +1,8 @@
 import React from "react";
 
-import Auth from "./features/Auth/Auth";
-import Update from "./features/Update/Update";
-import Wishlist from "./features/Wishlist/Wishlist";
+import Auth from "./components/Auth/Auth";
+import Update from "./components/Update/Update";
+import Wishlist from "./components/Wishlist/Wishlist";
 
 import "./Profile.module.css";
 

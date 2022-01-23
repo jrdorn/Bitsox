@@ -1,8 +1,8 @@
 import React from "react";
 
-import Cancel from "./features/Cancel/Cancel";
-import PaymentMethod from "./features/PaymentMethod/PaymentMethod";
-import Shipping from "./features/Shipping/Shipping";
+import Cancel from "./components/Cancel/Cancel";
+import PaymentMethod from "./components/PaymentMethod/PaymentMethod";
+import Shipping from "./components/Shipping/Shipping";
 
 import "./Checkout.css";
 

@@ -9,22 +9,22 @@ import { Provider } from "react-redux";
 //Routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Common from "./pages/Common/Common";
+import Common from "./routes/Common/Common";
 
-import Socks from "./pages/Socks/Socks";
-import Profile from "./pages/Profile/Profile";
-import Cart from "./pages/Cart/Cart";
+import Root from "./routes/Common/routes/Root/Root";
+import Profile from "./routes/Common/routes/Profile/Profile";
+import Cart from "./routes/Common/routes/Cart/Cart";
 
-import About from "./pages/About/About";
-import Blog from "./pages/Blog/Blog";
-import Support from "./pages/Support/Support";
+// import HelpCenter
+import About from "./routes/Common/routes/HelpCenter/routes/About/About";
+import Blog from "./routes/Common/routes/HelpCenter/routes/Blog/Blog";
+import Support from "./routes/Common/routes/HelpCenter/routes/Support/Support";
 
-import Checkout from "./pages/Checkout/Checkout";
+import Checkout from "./routes/Checkout/Checkout";
 
 // import * as serviceWorker from "./serviceWorker";
 
-/**
- * Design Common components used in multiple pages
+/*
  * Config ecommerce backend- inventory
  */
 
@@ -34,7 +34,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Common />}>
-            <Route index element={<Socks />} />
+            <Route index element={<Root />} />
             <Route path="/profile" element={<Profile />} />
 
             <Route path="/cart" element={<Cart />} />

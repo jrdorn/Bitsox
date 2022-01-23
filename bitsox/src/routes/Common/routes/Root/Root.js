@@ -1,12 +1,12 @@
 import React from "react";
 
-import Deal from "./features/Deal/Deal";
-import Inventory from "./features/Inventory/Inventory";
+import Deal from "./components/Deal/Deal";
+import Inventory from "./components/Inventory/Inventory";
 
-// import { Counter } from "./features/counter/Counter";
-import styles from "./Socks.module.css";
+// import { Counter } from "./components/counter/Counter";
+import styles from "./Root.module.css";
 
-function Socks() {
+function Root() {
   return (
     <div id={styles.Socks} className="Page">
       <Deal />
@@ -15,7 +15,7 @@ function Socks() {
   );
 }
 
-export default Socks;
+export default Root;
 
 /* <h1>Home</h1>
 

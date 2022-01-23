@@ -123,6 +123,41 @@
 
     Yesterday
 
+        Progress
+            Common page, replace Home with Socks
+            Use Outlet to render nested subroutes
+            Increase nested routes margin for visibility with Common layout 
+            Add HelpCenter, nest page folder for nested routes
+
+        Unexpected challenges?
+            Reorganizing file structure and refactoring code to fit what I think would 
+            make the most sense and provide the best UX (getting rid of hamburger 
+            button and creating HelpCenter page)
+
+    What problems to solve 
+        1. HelpCenter layout and subroute nesting/ styles 
+        2. Mock UI for all page components
+
+    How to solve them
+        1. Compare support pages on favorite sites and choose the most user-friendly design 
+        2. Use CSS grid to layout elements based on Keynote wireframes 
+
+    Prioritize
+        Order listed above
+
+    Potential roadblocks
+        Potential problems implementing links and routes for the new site structure, and 
+        managing state properly 
+
+    How to handle them
+        Given the current high-level site map, break down tasks to atomized bits and either
+        implement them or go back and change plan 
+
+
+|| 1/23
+
+    Yesterday
+
         Progress    
 
         Unexpected challenges?
@@ -139,7 +174,7 @@
 
 
 
-|| 1/23
+|| 1/24
 
     Yesterday
 

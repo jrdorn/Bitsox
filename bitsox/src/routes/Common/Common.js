@@ -2,9 +2,9 @@ import React from "react";
 
 import { Outlet } from "react-router-dom";
 
-import Searchbar from "./features/Searchbar/Searchbar";
-import Filters from "./features/Filters/Filters";
-import Navbar from "./features/Navbar/Navbar";
+import Searchbar from "./components/Searchbar/Searchbar";
+import Filters from "./components/Filters/Filters";
+import Navbar from "./components/Navbar/Navbar";
 
 import styles from "./Common.module.css";
 

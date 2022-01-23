@@ -101,17 +101,8 @@ p {
 /*
 
 
-    2.  X Hamburger submenu
-          above main man
-          animation X
 
-         X only display on mobile?
-            add icons for About, Support, and Blog for desktop
-          make sure when you click Hamburger on another page (root, Profile, Cart)
-            that the indicator bar slides back to the current pageX
-
-        Another solution:
-          new or repurposed page with new icon
+    1.    HelpCenter page with new icon
           Support, About, and Blog are nested routes of this
           Help&Info page, with ? icon
 
@@ -119,12 +110,17 @@ p {
           import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 
 
-    3. move on to About mock UI and other pages (should go much faster since the Common
+    2. move on to About mock UI and other pages (should go much faster since the Common
         components, Searchbar and Navbar, will be done)
 
 
         
-
+unexpected problems: yarn start not working. "command "start" not found"
+  cd to right subfolder
+  
+  "webpack 5.66.0 compiled with 17 errors"
+    fixing links after reorganizing and renaming files, implementing nested routes
+    for HelpCenter
 
 
 

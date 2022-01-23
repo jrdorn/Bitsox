@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../pages/Common/layout/Socks/features/Counter/counterSlice";
-import fCReducer from "../pages/Common/layout/HelpCenter/layout/About/features/FunctionComponent/FunctionComponentSlice";
+import counterReducer from "../routes/Common/routes/Root/components/Counter/counterSlice";
+import fCReducer from "../routes/Common/routes/HelpCenter/routes/About/components/FunctionComponent/FunctionComponentSlice";
 
 export const store = configureStore({
   reducer: {
