@@ -18,5 +18,3 @@ function HelpCenter() {
 }
 
 export default HelpCenter;
-
-// About, Blog links in Info

@@ -4,11 +4,11 @@ import AboutBitsox from "./components/AboutBitsox/AboutBitsox";
 
 // import FunctionComponent from "./components/FunctionComponent/FunctionComponent";
 
-import "./About.module.css";
+import "./FAQs.module.css";
 
-function About() {
+function FAQs() {
   return (
-    <div id="About">
+    <div id="FAQs">
       <AboutBitsox />
 
       <div>{/* <FunctionComponent /> */}</div>
@@ -16,4 +16,4 @@ function About() {
   );
 }
 
-export default About;
+export default FAQs;

@@ -159,6 +159,44 @@
     Yesterday
 
         Progress    
+            Rename & reorganize file structure
+            HelpCenter Navbar logo
+            Merge Support and HelpCenter pages
+            Functional Navbar routes
+
+        Unexpected challenges?
+            "yarn start" not working. "command "start" not found"
+                cd to right subfolder
+            "webpack 5.66.0 compiled with 17 errors"
+                fixing links after reorganizing and renaming files, implementing nested routes
+                for HelpCenter
+
+    What problems to solve 
+        HelpCenter UI and routes
+        Mock UI for About and all other pages
+        Get user auth working 
+
+    How to solve them
+        Follow React Router API docs and Keynote wireframes 
+
+    Prioritize
+        Order listed, with urgency for mock UIs
+
+    Potential roadblocks
+        Perfectionism around design 
+
+    How to handle them
+        Think "minimum viable product" and about complete app functionality:
+            user auth, storing inventory, secure checkout, etc. Spending too much 
+            time on minor details distracts from big picture 
+
+
+
+|| 1/24
+
+    Yesterday
+
+        Progress    
 
         Unexpected challenges?
 
@@ -174,7 +212,7 @@
 
 
 
-|| 1/24
+|| 1/25
 
     Yesterday
 

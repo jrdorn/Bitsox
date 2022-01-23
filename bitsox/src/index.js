@@ -16,7 +16,7 @@ import Profile from "./routes/Common/routes/Profile/Profile";
 import Cart from "./routes/Common/routes/Cart/Cart";
 
 import HelpCenter from "./routes/Common/routes/HelpCenter/HelpCenter";
-import About from "./routes/Common/routes/HelpCenter/routes/About/About";
+import FAQs from "./routes/Common/routes/HelpCenter/routes/FAQs/FAQs";
 import Blog from "./routes/Common/routes/HelpCenter/routes/Blog/Blog";
 
 import Checkout from "./routes/Checkout/Checkout";
@@ -42,7 +42,7 @@ ReactDOM.render(
             <Route path="cart" element={<Cart />} />
 
             <Route path="help_center" element={<HelpCenter />}>
-              <Route path="about" element={<About />} />
+              <Route path="faqs" element={<FAQs />} />
               <Route path="blog" element={<Blog />} />
             </Route>
           </Route>

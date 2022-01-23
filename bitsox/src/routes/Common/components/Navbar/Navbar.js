@@ -22,7 +22,6 @@ function Navbar() {
   return (
     <nav id={styles.Navbar}>
       <Tabs
-        id="HereIam"
         className={styles.allTabs}
         value={val}
         onChange={changeTab}

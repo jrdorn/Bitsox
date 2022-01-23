@@ -103,18 +103,14 @@ p {
 
 
 
-    1. HelpCenter routes
+    1. HelpCenter
+        mock UI
+        nested routes for About and Blog
 
     2. About mock UI and other pages 
 
+    3. Get user auth working 
 
-        
-unexpected problems: yarn start not working. "command "start" not found"
-  cd to right subfolder
-  
-  "webpack 5.66.0 compiled with 17 errors"
-    fixing links after reorganizing and renaming files, implementing nested routes
-    for HelpCenter
 
 
 
