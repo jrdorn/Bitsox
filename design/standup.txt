@@ -197,6 +197,68 @@
     Yesterday
 
         Progress    
+            Change About page to FAQs, include in HelpCenter
+            Complete HelpCenter mock UI
+                MUI Info buttons with show-hide animations
+                Contact form, title, submit button 
+            Nested routes for About and Blog
+
+        Unexpected challenges?
+            nested routes for FAQs and Blog
+                *SOLUTION: do not actually nest routes in index.js, since I do not want 
+                /help_center UI to persist in FAQs and Blog. Just render like normal routes
+                and define their url's as "help_center/{FAQS | Blog}
+
+            thinking "how could I implement this with pure CSS/JS" versus "what 
+                MUI component could I borrow and edit to implement what I have in my mind"
+
+            TextField component doesn't make explicit how to change border, on hightlight color,
+                only how to change select color
+                taking much longer than expected- parsing CSS specificity to highlight desired components
+                partial solution- inspecting devtools and using knowledge of CSS children: 
+                        .formField label {
+                    color: red;
+                }
+                .formField div fieldset {
+                    border-color: red;
+                }
+                finding smaller subcomponents, considering editing global class names included with MUI,
+                would rather not just ignore it and create a custom border 
+
+                partial solution would not select on-hover, so using global styleOverrides key from API
+                sx = {{}}
+
+                minRows, maxRows for setting height of message element, as opposed to messing with div container
+                and textarea inside
+
+
+    What problems to solve 
+        1. Finish mock UIs (FAQs, Blog, Profile, Cart, Checkout)
+
+        2. Get user auth working 
+
+        3. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+
+    How to solve them
+        Follow wireframes, read Mongo/ React/ Redux API docs and devblogs on ecommerce solutions
+
+    Prioritize
+        Ideally complete mock UIs and user auth today, then start working with Mongo
+
+    Potential roadblocks
+        Complex components/ custom styles for UI components
+
+    How to handle them
+        Emphasis on "mock"- most important thing is to get app working, you can always polish
+            the UI later 
+
+
+
+|| 1/25
+
+    Yesterday
+
+        Progress    
 
         Unexpected challenges?
 
@@ -212,7 +274,7 @@
 
 
 
-|| 1/25
+|| 1/26
 
     Yesterday
 

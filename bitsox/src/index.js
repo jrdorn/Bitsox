@@ -35,18 +35,20 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
+          {/* Common routes with Searchbar, Filters, and Navbar */}
           <Route path="/" element={<Common />}>
+            {/* Root shopping, Profile, Cart nested routes */}
             <Route index element={<Root />} />
             <Route path="profile" element={<Profile />} />
-
             <Route path="cart" element={<Cart />} />
 
-            <Route path="help_center" element={<HelpCenter />}>
-              <Route path="faqs" element={<FAQs />} />
-              <Route path="blog" element={<Blog />} />
-            </Route>
+            {/* HelpCenter and associated routes that do not share its styles */}
+            <Route path="help_center" element={<HelpCenter />} />
+            <Route path="help_center/faqs" element={<FAQs />} />
+            <Route path="help_center/blog" element={<Blog />} />
           </Route>
 
+          {/* Checkout route */}
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>

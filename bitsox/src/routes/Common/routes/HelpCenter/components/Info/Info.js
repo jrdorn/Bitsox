@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Info.module.css";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -14,25 +14,6 @@ const theme = createTheme({
     },
   },
 });
-
-//route to FAQs or Blog page on click
-let handleRoute = () => {
-  console.log("gn");
-};
-
-//
-//
-
-/**
- TODO
- 
- invidual components for Shipping, Return, and Privacy hidden text
- 
- pass components HiddenContent
-
- pass props to HiddenContent so the correct div is selected
- 
- */
 
 //shipping hidden text
 const HiddenShipping = () => {
@@ -107,7 +88,8 @@ function Info() {
           <Button
             className={styles.infoButtons}
             variant="outlined"
-            onClick={handleRoute}
+            component={Link}
+            to="/help_center/faqs"
           >
             FAQs
           </Button>
@@ -150,7 +132,8 @@ function Info() {
           <Button
             className={styles.infoButtons}
             variant="outlined"
-            onClick={handleRoute}
+            component={Link}
+            to="/help_center/blog"
           >
             Blog
           </Button>

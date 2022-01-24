@@ -321,3 +321,10 @@ X Hamburger submenu
           make sure when you click Hamburger on another page (root, Profile, Cart)
             that the indicator bar slides back to the current pageX
 *
+
+*
+  it's not about knowing everything, it's about knowing what not to listen to
+
+  filtering all the noise to find the exact question to search Stackoverflow, and the 
+    right smallest answer
+*
