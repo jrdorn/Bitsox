@@ -103,12 +103,16 @@ p {
 
 
 
-    1. HelpCenter
-        mock UI
+    1. HelpCenter > Info
+        buttons- show-hide animations for shipping, return, privacy
         nested routes for About and Blog
-        display info for Info buttons (shipping, privacy, return)
 
-    2. About mock UI and other pages 
+    2. Finish mock UIs
+      About
+      Blog
+      Profile
+      Cart
+      Checkout
 
     3. Get user auth working 
 
@@ -116,10 +120,13 @@ p {
 
 
 
-    #. highlight Navbar and Features items on hover
+    #Misc UI
+      grey border line under Filters
+      add title and adjust spacing for Info component
+      highlight Navbar and Features items on hover
       fix responsive UI for Features- use vw?
       fix transparent hover- HelpCenter Info showing up through Filters and Searchbar
-      Info component title
+
 
 
 
