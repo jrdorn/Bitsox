@@ -1,0 +1,53 @@
+#FAQsList {
+  display: grid;
+  justify-items: center;
+}
+
+#returnButton {
+  padding: 0.25em;
+  width: 7em;
+  justify-self: left;
+}
+@media (min-width: 950px) {
+  #returnButton {
+    margin-left: 15vw;
+  }
+}
+
+.listBox {
+  /* border: 3px solid salmon; */
+  width: 80vw;
+}
+
+.innerList {
+  list-style-type: none;
+}
+
+.question {
+  border-top: 1px solid grey;
+  padding: 2em;
+  margin: 1em;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.answer {
+  padding: 1em;
+  margin: 1em;
+
+  border-top: 1px solid grey;
+  width: 100%;
+}
+.unroll {
+  /* border-top: 1px solid grey; */
+
+  position: relative;
+
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  height: 0;
+  overflow: hidden;
+}

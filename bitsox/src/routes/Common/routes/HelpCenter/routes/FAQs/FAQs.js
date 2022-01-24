@@ -1,15 +1,15 @@
 import React from "react";
 
-import AboutBitsox from "./components/AboutBitsox/AboutBitsox";
+import FAQsList from "./components/FAQsList/FAQsList";
 
 // import FunctionComponent from "./components/FunctionComponent/FunctionComponent";
 
-import "./FAQs.module.css";
+import styles from "./FAQs.module.css";
 
 function FAQs() {
   return (
-    <div id="FAQs">
-      <AboutBitsox />
+    <div id={styles.FAQs}>
+      <FAQsList />
 
       <div>{/* <FunctionComponent /> */}</div>
     </div>

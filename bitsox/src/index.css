@@ -104,8 +104,7 @@ p {
 
        
 
-    1. Finish mock UIs
-      FAQs (with return button)
+    1. Mock UIs
       Blog (with return button)
       Profile
       Cart
@@ -122,6 +121,8 @@ p {
 
 
     #Polish UI
+
+
       Filters
         grey border bottom line
         fix responsive UI - use vw?
@@ -136,15 +137,19 @@ p {
         add title and adjust spacing for Info component
         production UI for shipping, return, and privacy
 
-      
+      FAQs, Blog, Root inventory
+        Production content, not placeholder text or images
+
+
 
 
 
 
 
 unexpected challenges:
-
-
+    key not passing to React list component in FAQs
+      "Each child in a list should have a unique "key" prop."
+      solved: github issues, add id prop to QA object and pass as key on ListItem component
 
 
 notes:
