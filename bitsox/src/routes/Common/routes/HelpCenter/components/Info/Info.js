@@ -4,9 +4,9 @@ import styles from "./Info.module.css";
 // import { Link } from "react-router-dom";
 
 import Button from "@mui/material/Button";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+//Button theme
 const theme = createTheme({
   palette: {
     primary: {
@@ -15,24 +15,65 @@ const theme = createTheme({
   },
 });
 
+//route to FAQs or Blog page on click
+let handleRoute = () => {
+  console.log("gn");
+};
+
+//display hidden text on click
+let displayHidden = () => {
+  console.log("gm");
+};
+
 function Info() {
   return (
     <ul id={styles.Info}>
       <ThemeProvider theme={theme}>
         <li>
-          <Button variant="outlined">FAQs</Button>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={handleRoute}
+          >
+            FAQs
+          </Button>
         </li>
         <li>
-          <Button variant="outlined">Blog</Button>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={displayHidden}
+          >
+            Shipping Info
+          </Button>
         </li>
         <li>
-          <Button variant="outlined">Return Policy</Button>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={displayHidden}
+          >
+            Return Policy
+          </Button>
         </li>
         <li>
-          <Button variant="outlined">Privacy Policy</Button>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={displayHidden}
+          >
+            Privacy Policy
+          </Button>
         </li>
+
         <li>
-          <Button variant="outlined">Shipping Info</Button>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={handleRoute}
+          >
+            Blog
+          </Button>
         </li>
       </ThemeProvider>
     </ul>
@@ -40,5 +81,3 @@ function Info() {
 }
 
 export default Info;
-
-// include links to the nested routes FAQs and Blog

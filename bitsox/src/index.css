@@ -106,6 +106,7 @@ p {
     1. HelpCenter
         mock UI
         nested routes for About and Blog
+        display info for Info buttons (shipping, privacy, return)
 
     2. About mock UI and other pages 
 
@@ -117,13 +118,40 @@ p {
 
     #. highlight Navbar and Features items on hover
       fix responsive UI for Features- use vw?
+      fix transparent hover- HelpCenter Info showing up through Filters and Searchbar
 
 
 
 
 
+unexpected challenges:
+  thinking "how could I implement this with pure CSS/JS" versus "what 
+    MUI component could I borrow and edit to implement what I have in my mind"
+
+    TextField component doesn't make explicit how to change border, on hightlight color,
+    only how to change select color
+    taking much longer than expected- parsing CSS specificity to highlight desired components
+      partial solution- inspecting devtools and using knowledge of CSS children: 
+            .formField label {
+        color: red;
+      }
+      .formField div fieldset {
+        border-color: red;
+      }
+
+    finding smaller subcomponents, considering editing global class names included with MUI,
+    would rather not just ignore it and create a custom border
+      
+    partial solution would not select on-hover, so using global styleOverrides key from API
+    sx = {{}}
 
 
+
+notes:
+  it's not about knowing everything, it's about knowing what not to listen to
+
+  filtering all the noise to find the exact question to search Stackoverflow, and the 
+    right smallest answer
 
 
 
