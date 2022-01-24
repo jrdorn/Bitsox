@@ -119,7 +119,7 @@ p {
     #. highlight Navbar and Features items on hover
       fix responsive UI for Features- use vw?
       fix transparent hover- HelpCenter Info showing up through Filters and Searchbar
-
+      Info component title
 
 
 
@@ -144,6 +144,9 @@ unexpected challenges:
       
     partial solution would not select on-hover, so using global styleOverrides key from API
     sx = {{}}
+
+    minRows, maxRows for setting height of message element, as opposed to messing with div container
+    and textarea inside
 
 
 

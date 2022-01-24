@@ -23,7 +23,9 @@ const theme = createTheme({
 let formStyles = {
   input: {
     color: "#e8e6e3",
-    width: "15em",
+  },
+  textarea: {
+    color: "#e8e6e3",
   },
   label: {
     color: "#a19f9c",
@@ -41,6 +43,8 @@ function Contact() {
   return (
     <form id={styles.Contact}>
       <ThemeProvider theme={theme}>
+        <h3 id={styles.title}>Contact Us</h3>
+
         {/* Name */}
         <TextField
           className={styles.formField}
@@ -64,11 +68,13 @@ function Contact() {
 
         {/* Message */}
         <TextField
-          id={styles.messageField}
+          className={styles.formField}
           label="Message"
           variant="outlined"
           margin="dense"
           sx={formStyles}
+          minRows="9"
+          maxRows="9"
           multiline
         />
 
