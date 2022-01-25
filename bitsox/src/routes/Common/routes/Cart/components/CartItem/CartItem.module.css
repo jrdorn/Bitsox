@@ -1,3 +1,45 @@
-.bg {
-  border: 5px solid yellow;
+#CartItem {
+  border: 3px solid grey;
+  border-radius: 5px;
+
+  padding: 1em;
+  margin: 1em;
+
+  width: 90vw;
+}
+
+.itemImg {
+  border: 1px solid grey;
+
+  width: 5em;
+  height: 5em;
+}
+
+/*place item name, description, and price adjacent to item image */
+.propsGroup {
+  /* border: 1px solid salmon; */
+  position: relative;
+
+  width: 10em;
+
+  left: 6em;
+  bottom: 5em;
+}
+
+.itemName {
+  border: 1px solid grey;
+
+  max-width: 7.5em;
+}
+
+.itemDescr {
+  border: 1px solid grey;
+
+  max-width: 6em;
+}
+
+.itemPrice {
+  border: 1px solid grey;
+
+  max-width: 3em;
 }

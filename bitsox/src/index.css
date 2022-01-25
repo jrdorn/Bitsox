@@ -106,7 +106,6 @@ p {
        
 
     1. Mock UIs 
-        Profile
         Cart
         Checkout
 
@@ -119,7 +118,7 @@ p {
         
     5. Order confirmation email, track shipping
 
-
+    6. Setup NodeJS server so app can deploy to Heroku
 
 
 

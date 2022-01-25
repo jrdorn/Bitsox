@@ -1,3 +1,12 @@
-/* #Cart {
-  background-color: yellow;
-} */
+#Cart {
+  /* border: 5px solid green; */
+
+  margin-top: 7.8em;
+  margin-bottom: 1.2em;
+
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+
+  display: grid;
+  justify-content: center;
+}

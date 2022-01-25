@@ -1,5 +1,7 @@
-.bg {
-  margin-top: 7.8em;
+#Proceed {
+  /* border: 5px solid orange; */
 
-  border: 5px solid orange;
+  display: grid;
+  grid-gap: 1em;
+  justify-content: center;
 }

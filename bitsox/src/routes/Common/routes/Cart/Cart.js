@@ -3,31 +3,27 @@ import React from "react";
 import Proceed from "./components/Proceed/Proceed";
 import CartItem from "./components/CartItem/CartItem";
 
-import "./Cart.module.css";
+import styles from "./Cart.module.css";
 
 function Cart() {
   return (
-    <div id="Cart">
+    <div id={styles.Cart}>
+      <h3>Cart</h3>
       <Proceed />
-      <CartItem />
+      <CartItem
+        image="1img"
+        name="Possum Sock"
+        descr="Color: grey"
+        price="$5.00"
+      />
+      <CartItem
+        image="2img"
+        name="Marmoset Sock"
+        descr="Color: navy"
+        price="$7.00"
+      />
     </div>
   );
 }
 
 export default Cart;
-
-/**
- return button
- */
-
-/**
- Subtotal
- proceed to checkout button
- */
-
-/**
- Item
- IMG     DESCR
- remove   wishlist
- 
- */
