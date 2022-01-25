@@ -3,27 +3,19 @@ import React from "react";
 import Cancel from "./components/Cancel/Cancel";
 import PaymentMethod from "./components/PaymentMethod/PaymentMethod";
 import Shipping from "./components/Shipping/Shipping";
+import Order from "./components/Order/Order";
 
-import "./Checkout.css";
+import styles from "./Checkout.module.css";
 
 function Checkout() {
   return (
-    <div id="Checkout">
+    <div id={styles.Checkout}>
       <Cancel />
       <PaymentMethod />
       <Shipping />
+      <Order />
     </div>
   );
 }
 
 export default Checkout;
-
-/**
- return to cart
-
- payment method
-
- shipping form 
-
- place order button
- */

@@ -104,24 +104,42 @@ p {
 
 
        
-    1. 404 Not Found page
-        <Route path="*" element={<Err />} />
 
-    2. Mock UI for Checkout
+    1. Get user auth working, JWT login
 
-    3. Get user auth working, JWT login
-
-    4. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+    2. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
         
-    5. Order confirmation email, track shipping
+    3. Order confirmation email, track shipping
 
-    6. Setup NodeJS server so app can deploy to Heroku
+    4. Setup NodeJS server so app can deploy to Heroku
+
+
+
+
+
+    unexpected challenges:
+        key not passing to React list component in FAQs
+          "Each child in a list should have a unique "key" prop."
+          solved: github issues, add id prop to QA object and pass as key on ListItem component
+
+        setting position:relative on wishlist items, then this making the page width larger than viewport
+          solve by isolating components and trying alternative styles
+
+    notes:
+
+
+
+
+
+
+
+
+
 
 
 
 
     #Polish UI
-
 
       Filters
         grey border bottom line
@@ -159,26 +177,6 @@ p {
 
       Profile, Cart, Checkout
         update all content for production
-
-
-
-
-
-
-
-unexpected challenges:
-    key not passing to React list component in FAQs
-      "Each child in a list should have a unique "key" prop."
-      solved: github issues, add id prop to QA object and pass as key on ListItem component
-
-    setting position:relative on wishlist items, then this making the page width larger than viewport
-      solve by isolating components and trying alternative styles
-
-notes:
-
-
-
-
 */
 
 /* lighter black */

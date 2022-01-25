@@ -25,13 +25,6 @@ import Err from "./routes/Err/Err";
 
 // import * as serviceWorker from "./serviceWorker";
 
-/*
- * Config ecommerce backend- inventory
-
-
-path="help_center"
- */
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
