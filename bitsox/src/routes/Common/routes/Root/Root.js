@@ -7,9 +7,21 @@ import Inventory from "./components/Inventory/Inventory";
 import styles from "./Root.module.css";
 
 function Root() {
+  //
+  //test HTTP request from React app to Node Express server
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+  //
+  //
+
   return (
     <div id={styles.Root} className="Page">
-      <Deal />
+      <Deal data={!data ? "Loading..." : data} />
       <Inventory />
     </div>
   );
@@ -30,8 +42,8 @@ export default Root;
   <Counter />
 */
 
-{
-  /* <Link
+//{
+/* <Link
   to={{
     pathname: "/courses",
     search: "?sort=name",
@@ -39,4 +51,4 @@ export default Root;
     state: { fromDashboard: true },
   }}
 />; */
-}
+//}
