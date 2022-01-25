@@ -20,7 +20,7 @@ const theme = createTheme({
 });
 
 //Form field styles
-let formStyles = {
+const formStyles = {
   input: {
     color: "#e8e6e3",
   },
@@ -34,8 +34,13 @@ let formStyles = {
     borderColor: "#a19f9c",
     transition: "border-color 0.5s",
   },
+  "&:hover": {
+    label: {
+      color: "#a022b5",
+    },
+  },
   "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-    borderColor: "#EDEAE6",
+    borderColor: "#a022b5",
   },
 };
 

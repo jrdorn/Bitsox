@@ -9,4 +9,6 @@
   gap: 1em;
   grid-template-areas: "Deal" "Inventory";
   grid-template-columns: 100%;
+
+  width: 100vw;
 }

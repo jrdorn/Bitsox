@@ -24,6 +24,7 @@ body {
   ); */
   image-rendering: crisp-edges;
   min-height: 100vh;
+  width: 100vw;
 }
 
 html,
@@ -115,6 +116,8 @@ p {
     3. Get user auth working, JWT login
 
     4. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+        
+    5. Order confirmation email, track shipping
 
 
 
@@ -127,6 +130,8 @@ p {
       Filters
         grey border bottom line
         fix responsive UI - use vw?
+        desktop width: Filters disappear on scroll
+
 
       Navbar
           highlight Navbar and Filters items on hover
@@ -148,7 +153,16 @@ p {
       FAQs, Blog, Root inventory
         Production content, not placeholder text or images
 
+      *
+        HD images, background overlays like Uniswap
+        refactor, share more components between pages (button theme, etc)
 
+      Profile
+        separate nested route for Wishlist
+        new nested route OrderHistory
+
+      Profile, Cart, Checkout
+        update all content for production
 
 
 
@@ -161,6 +175,8 @@ unexpected challenges:
       "Each child in a list should have a unique "key" prop."
       solved: github issues, add id prop to QA object and pass as key on ListItem component
 
+    setting position:relative on wishlist items, then this making the page width larger than viewport
+      solve by isolating components and trying alternative styles
 
 notes:
 

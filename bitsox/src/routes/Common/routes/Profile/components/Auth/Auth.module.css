@@ -1,4 +1,7 @@
-.bg {
-  margin-top: 7.8em;
-  border: 5px solid orange;
+#Auth {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 3px solid grey;
+  display: grid;
+  justify-items: center;
 }

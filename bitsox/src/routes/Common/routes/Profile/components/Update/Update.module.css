@@ -1,3 +1,7 @@
-.bg {
-  border: 5px solid yellow;
+#Update {
+  /* border: 5px solid yellow; */
+  padding-bottom: 2em;
+  display: grid;
+  justify-self: center;
+  width: 28em;
 }
