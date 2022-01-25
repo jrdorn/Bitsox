@@ -1,3 +1,19 @@
 #Blog {
-  background-color: red;
+  /* border: 5px solid salmon; */
+
+  margin-top: 7.8em;
+  margin-bottom: 1.3em;
+
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+
+  display: grid;
+  grid-gap: 2em;
+  justify-items: center;
+}
+
+#returnButton {
+  padding: 0.25em;
+  width: 7em;
+  justify-self: left;
 }

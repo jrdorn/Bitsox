@@ -17,3 +17,13 @@ function Checkout() {
 }
 
 export default Checkout;
+
+/**
+ return to cart
+
+ payment method
+
+ shipping form 
+
+ place order button
+ */

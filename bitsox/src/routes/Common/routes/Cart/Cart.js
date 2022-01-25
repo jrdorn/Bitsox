@@ -15,3 +15,19 @@ function Cart() {
 }
 
 export default Cart;
+
+/**
+ return button
+ */
+
+/**
+ Subtotal
+ proceed to checkout button
+ */
+
+/**
+ Item
+ IMG     DESCR
+ remove   wishlist
+ 
+ */

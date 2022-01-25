@@ -104,16 +104,17 @@ p {
 
        
 
-    1. Mock UIs
-      Blog (with return button)
-      Profile
-      Cart
-      Checkout
+    1. Mock UIs 
+        Profile
+        Cart
+        Checkout
 
-    2. Get user auth working 
+    2. 404 not found page
+        <Route path="*" element={<NotFound />} />
 
-    3. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+    3. Get user auth working, JWT login
 
+    4. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
 
 
 
@@ -137,8 +138,17 @@ p {
         add title and adjust spacing for Info component
         production UI for shipping, return, and privacy
 
+      FAQs
+        '+' on right end of questions that turns to '-' when answer is open
+
+      Blog
+        'view more' links to unique blog page
+        store data on Mongo
+
       FAQs, Blog, Root inventory
         Production content, not placeholder text or images
+
+
 
 
 

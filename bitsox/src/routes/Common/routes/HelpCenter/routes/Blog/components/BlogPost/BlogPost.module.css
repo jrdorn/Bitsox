@@ -1,5 +1,13 @@
-.bg {
-  margin-top: 7.8em;
+.blogPost {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 
-  border: 5px solid orange;
+  min-width: 90vw;
+}
+
+.fakeImg {
+  width: 10em;
+  height: 10em;
+  border: 2px solid grey;
+  border-radius: 5px;
 }

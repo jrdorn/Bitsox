@@ -17,3 +17,15 @@ function Profile() {
 }
 
 export default Profile;
+
+/**
+ Reg/ login/ sign out with email
+ */
+
+/**
+change info, email newsletter (y/n), email address, name, shipping, etc
+ */
+
+/**
+wish list
+ */
