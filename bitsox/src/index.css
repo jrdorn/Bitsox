@@ -101,39 +101,42 @@ p {
 
 /*
 
+  Tasks:
 
+      * Setup NodeJS server and learn how to deploy app to Heroku 
+
+      * Get user auth working, JWT login
+
+      * Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+          
+      * Order confirmation email, track shipping
 
        
 
-    1. Get user auth working, JWT login
-
-    2. Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
-        
-    3. Order confirmation email, track shipping
-
-    4. Setup NodeJS server so app can deploy to Heroku
 
 
 
 
 
-    unexpected challenges:
-        key not passing to React list component in FAQs
-          "Each child in a list should have a unique "key" prop."
-          solved: github issues, add id prop to QA object and pass as key on ListItem component
-
-        setting position:relative on wishlist items, then this making the page width larger than viewport
-          solve by isolating components and trying alternative styles
-
-    notes:
+  Unexpected challenges:
 
 
 
+  Notes:
+
+    Heroku
+      deploy, manage, scale apps
+      platform as a service 
+      !!!!!!! can use PostgreSQL instead of MongoDB
+        NoSQL good for doc storage, but relational DBs would be the right tool for this project (user has orders, orders have items etc)
+      Atomicity, Consistency, Isolation, Durability guarantee data validity despite errors
+      
+      Add-ons: Relic, SendGrid, Searchify, Fastly, Papertrail, ClearDB MySQL, Treasure Data
+
+      CI/CD 
 
 
-
-
-
+    git remote -v
 
 
 

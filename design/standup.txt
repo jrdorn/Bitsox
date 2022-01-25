@@ -260,18 +260,37 @@
 
         Progress    
 
+            Link to FAQs and Blog pages from HelpCenter Info component 
+            Finish remaining mock UIs (FAQs, Blog, Profile, Cart, Checkout)
+            New 404 page 
+
         Unexpected challenges?
 
-    What problems to solve 
+            React: key not passing to React list component in FAQs
+                "Each child in a list should have a unique "key" prop."
+                solved: github issues, add id prop to QA object and pass as key on ListItem component
 
-    How to solve them
+            CSS: setting position:relative on wishlist items, then this making the page width larger than viewport
+                solve by isolating components and manually setting width
 
-    Prioritize
 
-    Potential roadblocks
+    What problems to solve and how to solve them
 
-    How to handle them
+        * Setup NodeJS server and learn how to deploy app to Heroku (deploy now, and continously push updates? Version no.'s?)
 
+        * Get user auth working, JWT login
+
+        * Setup MongoDB catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+            
+        * Order confirmation email, track shipping
+
+        #solve: API docs and stackoverflow for clarification 
+
+
+    Potential roadblocks and how to handle them
+
+        Unfamiliarity with new technologies: API docs, tutorials if needed, search the right questions on stackoverflow 
+        
 
 
 || 1/26
@@ -282,12 +301,21 @@
 
         Unexpected challenges?
 
-    What problems to solve 
 
-    How to solve them
+    What problems to solve and how to solve them
 
-    Prioritize
 
-    Potential roadblocks
+    Potential roadblocks how to handle them
 
-    How to handle them
+
+
+|| 1/27
+
+    Yesterday
+        Progress    
+
+        Unexpected challenges?
+
+    What problems to solve and how to solve them
+
+    Potential roadblocks how to handle them
