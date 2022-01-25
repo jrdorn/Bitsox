@@ -1,0 +1,22 @@
+#Err {
+  margin-top: 7.8em;
+
+  /* border: 2px solid red; */
+  padding-left: 2.5em;
+  letter-spacing: 0.1em;
+
+  display: grid;
+  justify-content: center;
+}
+
+#errno {
+  font-size: 7rem;
+  position: relative;
+  top: 0.5em;
+}
+
+#msg {
+  position: relative;
+  right: 0.5em;
+  bottom: 2em;
+}

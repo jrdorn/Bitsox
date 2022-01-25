@@ -104,13 +104,10 @@ p {
 
 
        
+    1. 404 Not Found page
+        <Route path="*" element={<Err />} />
 
-    1. Mock UIs 
-        Cart
-        Checkout
-
-    2. 404 not found page
-        <Route path="*" element={<NotFound />} />
+    2. Mock UI for Checkout
 
     3. Get user auth working, JWT login
 

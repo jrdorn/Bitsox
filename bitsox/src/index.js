@@ -21,6 +21,8 @@ import Blog from "./routes/Common/routes/HelpCenter/routes/Blog/Blog";
 
 import Checkout from "./routes/Checkout/Checkout";
 
+import Err from "./routes/Err/Err";
+
 // import * as serviceWorker from "./serviceWorker";
 
 /*
@@ -50,6 +52,9 @@ ReactDOM.render(
 
           {/* Checkout route */}
           <Route path="/checkout" element={<Checkout />} />
+
+          {/* 404 route */}
+          <Route path="*" element={<Err />} />
         </Routes>
       </BrowserRouter>
     </Provider>
