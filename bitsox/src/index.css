@@ -124,6 +124,11 @@ p {
 
   Notes:
 
+    git remote -v
+    sheltered-inlet-72152
+    postgresql-triangular-64522 as DATABASE_URL
+    postgresql://localhost 5432
+
     Heroku
       deploy, manage, scale apps
       platform as a service 
@@ -136,7 +141,24 @@ p {
       CI/CD 
 
 
-    git remote -v
+
+
+*
+
+
+After Postgres is installed and you can connect, you must 
+export the DATABASE_URL environment variable for your app 
+to connect to it when running locally:
+
+
+export DATABASE_URL=postgres://$(whoami)
+
+
+Postgres will connect to the local database matching your user 
+account name (which is set up as part of installation).
+*
+
+
 
 
 

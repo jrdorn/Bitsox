@@ -1,7 +1,7 @@
 {
   "name": "bitsox",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:8000",
   "private": true,
   "license": "MIT",
   "dependencies": {
