@@ -7,22 +7,28 @@ if (PORT === null || PORT === undefined || PORT === "") {
 }
 const app = express();
 
-//practice Postgres query
+//test call
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', '../'))
+// });
 
+//access environment variables on localhost
+require("dotenv").config();
+
+//practice Postgres query
+const { Pool } = require("pg");
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 app.get("/db", async (req, res) => {
   try {
-    const { Pool } = require("pg");
-    const pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
-      // ssl: {
-      //   rejectUnauthorized: false,
-      // },
-    });
-
     const client = await pool.connect();
     const result = await client.query("select * from anohana");
     const results = { results: result ? result.rows : null };
-    res.render("/db", result);
+    res.send(results);
     client.release();
   } catch (e) {
     console.error(e);
@@ -37,11 +43,6 @@ app.get("/db", async (req, res) => {
 
 //Node serve files for built React app
 app.use(express.static(path.resolve(__dirname, "../bitsox/build")));
-
-//test call
-app.get("/", (req, res) => {
-  res.send("Welcome to Express");
-});
 
 //create api endpoint and handle GET requests to the /api route
 app.get("/api", (req, res) => {
