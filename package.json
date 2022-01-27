@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
+    "start": "nodemon server/index.js",
     "build": "cd bitsox && npm install && npm run build"
   },
   "repository": {
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/jrdorn/Bitsox#readme",
   "dependencies": {
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "pg": "^8.7.1"
   }
 }

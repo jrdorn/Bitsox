@@ -299,19 +299,45 @@
 
         Progress    
 
+            Finish Heroku tutorials
+
+            Create Express app and make HTTP request to server
+            
+            Create Heroku Postgres client
+
         Unexpected challenges?
+
+            length of time to finish Heroku tutorials
+
+            design decision: don't worry about clustering/ concurrency for now
+
+            setup SSL support for local Node server to work with Postgres,
+                or try localhost db, or other solution
 
 
     What problems to solve and how to solve them
 
+      * Setup NodeJS server and deploy app to Heroku 
+
+      * Setup Postgres DB
+
+      * Get user auth working, JWT login
+
+      * Setup catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+          
+      * Order confirmation email, track shipping
+
 
     Potential roadblocks how to handle them
+
+      Heroku Postgres db not running locally: explore alternative implementations on stackoverflow
 
 
 
 || 1/27
 
     Yesterday
+
         Progress    
 
         Unexpected challenges?

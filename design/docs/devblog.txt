@@ -328,3 +328,16 @@ X Hamburger submenu
   filtering all the noise to find the exact question to search Stackoverflow, and the 
     right smallest answer
 *
+
+*
+    Heroku
+      deploy, manage, scale apps
+      platform as a service 
+      !!!!!!! can use PostgreSQL instead of MongoDB
+        NoSQL good for doc storage, but relational DBs would be the right tool for this project (user has orders, orders have items etc)
+      Atomicity, Consistency, Isolation, Durability guarantee data validity despite errors
+      
+      Add-ons: Relic, SendGrid, Searchify, Fastly, Papertrail, ClearDB MySQL, Treasure Data
+
+      CI/CD 
+*

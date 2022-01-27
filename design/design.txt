@@ -267,3 +267,97 @@
         Tablet  >= 768px
         Desktop >= 1200px
 
+
+
+
+|||
+
+
+
+  Tasks:
+
+
+      * Setup NodeJS server and deploy app to Heroku 
+
+      * Setup Postgres DB
+
+      * Get user auth working, JWT login
+
+      * Setup catalog, inventory management, shopping cart, transactions / explore other popular ecommerce solutions like Shopify
+          
+      * Order confirmation email, track shipping
+
+   
+   
+      
+
+
+
+
+      
+
+
+
+    git remote -v
+    sheltered-inlet-72152
+    postgresql-triangular-64522 as DATABASE_URL
+    postgresql://localhost 5432
+    heroku local web
+
+
+
+
+
+
+  Unexpected challenges:
+
+
+    
+
+  Notes:
+
+
+
+
+
+
+
+
+    #Polish UI
+
+      Filters
+        grey border bottom line
+        fix responsive UI - use vw?
+        desktop width: Filters disappear on scroll
+
+
+      Navbar
+          highlight Navbar and Filters items on hover
+          always have indicator on current page (if user directly
+            goes to /help_center right now, the indicator is on root)
+
+      HelpCenter
+        fix transparent hover- HelpCenter Info showing up through Filters and Searchbar
+        add title and adjust spacing for Info component
+        production UI for shipping, return, and privacy
+
+      FAQs
+        '+' on right end of questions that turns to '-' when answer is open
+
+      Blog
+        'view more' links to unique blog page
+        store data on Mongo
+
+      FAQs, Blog, Root inventory
+        Production content, not placeholder text or images
+
+      *
+        HD images, background overlays like Uniswap
+        refactor, share more components between pages (button theme, etc)
+
+      Profile
+        separate nested route for Wishlist
+        new nested route OrderHistory
+
+      Profile, Cart, Checkout
+        update all content for production
