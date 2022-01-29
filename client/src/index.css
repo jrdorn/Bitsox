@@ -115,3 +115,26 @@ p {
 /* background-color: #a022b5; */
 
 /* || Responsive Design */
+
+/*
+
+useEffect is similar to componentDidMount, componentDidUpdate, and componentWillUnmount combined
+
+generate bundle.js file containing React components using Webpack
+  entry point file and output file
+
+
+May not need Express? 
+  Every view is contained in one React-Router bundle
+  do not need server to despond to each request with a different payload
+  single endpoint for server-side rendering
+
+  backend talks to DB and sends data to frontend
+    add each of the routes separately or use * route which always responds with index.html
+    user visits /login
+      ajax call to /api/auth
+
+mysite.com/paths => React app
+mysite.com/api/paths => send API data to anyone who requests that path
+
+*/

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Deal from "./components/Deal/Deal";
 import Inventory from "./components/Inventory/Inventory";
@@ -6,16 +6,37 @@ import Inventory from "./components/Inventory/Inventory";
 // import { Counter } from "./components/counter/Counter";
 import styles from "./Root.module.css";
 
+import axios from "axios";
+
 function Root() {
   //
   //test HTTP request from React app to Node Express server
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
+  //
+  //
+
+  //
+  //
+  /*
+    state = {
+    users: [],
+  };
+  componentDidMount() {
+    axios.get("/users.json").then((response) => {
+      this.setState({ users: response.data });
+    });
+  } */
+  //
+  // useEffect(() => {
+  //   axios.get('/users.json').then((res => {
+
+  //   }))
+  // });
   //
   //
 

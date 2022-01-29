@@ -42,7 +42,7 @@ app.get("/db", async (req, res) => {
 //
 
 //Node serve files for built React app
-app.use(express.static(path.resolve(__dirname, "../bitsox/build")));
+app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 //create api endpoint and handle GET requests to the /api route
 app.get("/api", (req, res) => {
