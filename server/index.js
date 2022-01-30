@@ -41,8 +41,16 @@ app.get("/db", async (req, res) => {
 // In your code, you add this snippet with the credentials and connection string details, here process.env.DATABASE_URL comes from environment file, if it is there as it will enable ssl mode, else in local without ssl it works.
 //
 
+//
+//
 //Node serve files for built React app
 app.use(express.static(path.resolve(__dirname, "../client/build")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path + "index.html");
+});
+//
+//
 
 //create api endpoint and handle GET requests to the /api route
 app.get("/api", (req, res) => {

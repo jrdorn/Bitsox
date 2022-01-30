@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
-    "build": "cd bitsox && npm install && npm run build"
+    "heroku-postbuild": "cd ../client && yarn install && yarn build"
   },
   "repository": {
     "type": "git",
