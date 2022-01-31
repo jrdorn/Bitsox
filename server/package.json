@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/index.js",
-    "heroku-postbuild": "cd ../client && yarn install && yarn build"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "npm install && cd ../client/ && yarn install && yarn build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jrdorn/Bitsox#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "nodemon": "^2.0.15",

@@ -45,6 +45,7 @@ app.get("/db", async (req, res) => {
 //
 //Node serve files for built React app
 app.use(express.static(path.resolve(__dirname, "../client/build")));
+app.use(express.static("../client/public"));
 
 app.get("/", (req, res) => {
   res.sendFile(path + "index.html");
