@@ -1,18 +1,18 @@
 ## Introduction
 
-Bitsox is \_\_\_
+Bitsox is an ecommerce platform that accepts crypto in exchange for socks.
 
-I drew inspiration from \_\_\_
+I drew design inspiration from Uniswap, Aave, and Polygon.
 
 ## Status
 
-This project is currently under development. Future updates include \_\_\_
+This project is currently under development. Future updates include sock NFTs, wallet authentication, and a decentralized frontend.
 
 ## Features
 
-- A
-- B
-- C
+- Purchase socks with cryptocurrencies
+- Read devblog updates
+- Form to contact customer support
 
 ## Technologies
 
