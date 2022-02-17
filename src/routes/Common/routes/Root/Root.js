@@ -13,12 +13,14 @@ function Root() {
   //test HTTP request from React app to Node Express server
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("/api")
+    fetch("https://bitsox-server.herokuapp.com/api")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
   //
   //
+
+  // --max_old_space_size=4096
 
   //
   //
