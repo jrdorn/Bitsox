@@ -13,28 +13,28 @@ const app = express();
 // });
 
 //access environment variables on localhost
-require("dotenv").config();
+// require("dotenv").config();
 
 //practice Postgres query
-const { Pool } = require("pg");
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,
-  },
-});
-app.get("/db", async (req, res) => {
-  try {
-    const client = await pool.connect();
-    const result = await client.query("select * from anohana");
-    const results = { results: result ? result.rows : null };
-    res.send(results);
-    client.release();
-  } catch (e) {
-    console.error(e);
-    res.send(e);
-  }
-});
+// const { Pool } = require("pg");
+// const pool = new Pool({
+//   connectionString: process.env.DATABASE_URL,
+//   ssl: {
+//     rejectUnauthorized: false,
+//   },
+// });
+// app.get("/db", async (req, res) => {
+//   try {
+//     const client = await pool.connect();
+//     const result = await client.query("select * from anohana");
+//     const results = { results: result ? result.rows : null };
+//     res.send(results);
+//     client.release();
+//   } catch (e) {
+//     console.error(e);
+//     res.send(e);
+//   }
+// });
 
 //
 // const pool = new Pool({ connectionString: process.env.DATABASE_URL || 'postgresql://postgres:@localhost:5432/', ssl: process.env.DATABASE_URL ? true : false })
@@ -59,22 +59,22 @@ app.get("/api", (req, res) => {
 });
 
 //practice using config vars
-let showTimes = () => {
-  let result = "";
-  const times = process.env.TIMES || 5;
-  for (let i = 0; i < times; i++) {
-    result += i + " ";
-  }
-  return result;
-};
-app.get("/times", (req, res) => {
-  res.send(showTimes());
-});
+// let showTimes = () => {
+//   let result = "";
+//   const times = process.env.TIMES || 5;
+//   for (let i = 0; i < times; i++) {
+//     result += i + " ";
+//   }
+//   return result;
+// };
+// app.get("/times", (req, res) => {
+//   res.send(showTimes());
+// });
 
 //all other GET requests return the React app
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../bitsox/build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../bitsox/build", "index.html"));
+// });
 
 //listen at specified port
 app.listen(PORT, () => {
