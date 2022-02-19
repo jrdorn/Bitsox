@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./Update.module.css";
 
-import {
-  FormGroup,
-  FormControlLabel,
-  Checkbox,
-  TextField,
-  Button,
-} from "@mui/material/";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
