@@ -11,7 +11,7 @@ const Foobar = () => {
 //define a service using a base URL and expected endpoints
 // export const bitsoxAPI = createApi({
 //     reducerPath: 'foobarApi',
-//     baseQuery: fetchBaseQuery({ baseUrl: 'https://baseurl.com/api/' }),
+//     baseQuery: fetchBaseQuery({ baseUrl: 'https://bitsox-server.herokuapp.com/api/' }),
 //     endpoints: (builder) => ({
 //         getItemByName: builder.query<Foobar, string>({
 //             query: (name) => `foobar/${name}`,
