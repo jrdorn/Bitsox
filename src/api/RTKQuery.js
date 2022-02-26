@@ -4,20 +4,28 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { render } from "react-dom";
 
-const Foobar = () => {
-  render(<div>foobar</div>);
-};
+// const Foobar = () => {
+//   render(<div>foobar</div>);
+// };
 
 //define a service using a base URL and expected endpoints
-// export const bitsoxAPI = createApi({
-//     reducerPath: 'foobarApi',
-//     baseQuery: fetchBaseQuery({ baseUrl: 'https://bitsox-server.herokuapp.com/api/' }),
-//     endpoints: (builder) => ({
-//         getItemByName: builder.query<Foobar, string>({
-//             query: (name) => `foobar/${name}`,
-//         })
-//     })
-// })
+//  API slice object
+export const bitsoxAPI = createApi({
+  //cache reducer added at 'state.api'
+  reducerPath: "api",
+  //all requests will have URLs starting with the baseUrl
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://bitsox-server.herokuapp.com/api/",
+  }),
+  //operations and requests for the server
+  endpoints: (builder) => ({
+    //getItems endpoint is a query that returns data
+    getItems: builder.query({
+      query: () => "/items",
+    }),
+  }),
+});
 
 //
-// export const { useGetItemByName } = bitsoxApi;
+//auto-generated hook
+export const { useGetItemsQuery } = bitsoxAPI;
