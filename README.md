@@ -1,6 +1,6 @@
 ## Introduction
 
-Bitsox is an ecommerce platform that accepts crypto in exchange for socks. Source code for the server and REST API can be found here.
+Bitsox is an ecommerce platform that accepts crypto in exchange for socks. Source code for the server and REST API can be found [here](https://github.com/jrdorn/bitsox-server).
 
 I drew design inspiration for this project from Uniswap, Aave, and Polygon.
 
