@@ -6,7 +6,7 @@ I drew design inspiration for this project from Uniswap, Aave, and Polygon.
 
 ## Status
 
-Bitsox is currently under development. Future updates include sock NFTs, Redux store, wallet authentication, customer support form, devblog updates, and a decentralized frontend.
+Bitsox is currently under development. Future updates include sock NFTs, Redux store, custom user authentication, ETH wallet authentication, customer support form, devblog updates, and a decentralized frontend.
 
 ## Features
 
@@ -16,12 +16,10 @@ Bitsox is currently under development. Future updates include sock NFTs, Redux s
 
 ## Technologies
 
-Project is created with:
+Frontend is created with:
 
 - HTML5
 - CSS3
 - JavaScript
 - React
 - Redux
-- Node
-- Express
