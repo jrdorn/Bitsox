@@ -1,8 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// TODO: track loading state to show UI spinners on shop items
+/**
+  TODO
+ 
+    track loading state to show UI spinners on shop items
 
-const shopSlice = createSlice({
+
+
+    components that call RTKQuery hooks on mount
+    JSON and image  
+    highlight on click, display data
+
+
+ */
+
+export const shopSlice = createSlice({
   name: "shop",
   initialState: [],
   reducers: {
@@ -13,8 +25,8 @@ const shopSlice = createSlice({
 
 //action creator using name of the action type itself:
 //  createSomething() returns an action with type "shop/createSomething"
-const { createSomething } = shopSlice.actions;
-console.log(createSomething({ id: 123, message: "gm" }));
+// const { createSomething } = shopSlice.actions;
+// console.log(createSomething({ id: 123, message: "gm" }));
 
 /** define a slice and export its action creators and reducers  */
 
@@ -54,3 +66,4 @@ console.log(createSomething({ id: 123, message: "gm" }));
 //   const response = await usersAPI.fetchAll();
 //   dispatch(usersReceived(response.data));
 // };
+export default shopSlice.reducer;
