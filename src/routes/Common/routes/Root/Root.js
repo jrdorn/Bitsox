@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 
-import Deal from "./components/Deal/Deal";
+// import Deal from "./components/Deal/Deal";
 import Inventory from "./components/Inventory/Inventory";
 
 // import { Counter } from "./components/counter/Counter";
 import styles from "./Root.module.css";
 
-import axios from "axios";
+// import axios from "axios";
 
 function Root() {
   //
   //test HTTP request from React app to Node Express server
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch("https://bitsox-server.herokuapp.com/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // const [data, setData] = useState(null);
+  // useEffect(() => {
+  //   fetch("https://bitsox-server.herokuapp.com/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
   //
   //
 
@@ -44,7 +44,7 @@ function Root() {
 
   return (
     <div id={styles.Root} className="Page">
-      <Deal data={!data ? "Loading..." : data} />
+      {/* <Deal data={!data ? "Loading..." : data} /> */}
       <Inventory />
     </div>
   );

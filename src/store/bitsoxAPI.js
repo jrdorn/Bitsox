@@ -39,9 +39,14 @@ export const bitsoxAPI = createApi({
       query: () => "/private",
     }),
 
-    // get shop inventory items
+    // get shop inventory JSON
     getShop: builder.query({
       query: () => "/shop",
+    }),
+
+    // get images for individual socks in the shop
+    getSockByName: builder.query({
+      query: (name) => `shop/:${name}`,
     }),
 
     //
@@ -92,3 +97,5 @@ export const { useGetCartQuery } = bitsoxAPI;
 export const { useGetPrivateQuery } = bitsoxAPI;
 
 export const { useGetShopQuery } = bitsoxAPI;
+
+export const { useGetSockByNameQuery } = bitsoxAPI;
