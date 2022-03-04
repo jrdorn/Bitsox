@@ -4,6 +4,13 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { render } from "react-dom";
 
+/**
+ * Auth
+ * Cart
+ * Private
+ * Shop
+ */
+
 // const Foobar = () => {
 //   render(<div>foobar</div>);
 // };
@@ -20,12 +27,12 @@ export const bitsoxAPI = createApi({
   //operations and requests for the server
   endpoints: (builder) => ({
     //getItems endpoint is a query that returns data
-    getItems: builder.query({
-      query: () => "/items",
+    getShop: builder.query({
+      query: () => "/shop",
     }),
   }),
 });
 
 //
 //auto-generated hook
-export const { useGetItemsQuery } = bitsoxAPI;
+export const { useGetShopQuery } = bitsoxAPI;

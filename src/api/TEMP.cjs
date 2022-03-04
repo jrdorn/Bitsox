@@ -2,10 +2,10 @@
 
 const fetch = require("node-fetch");
 
-//list all users in db
+//list all items in shop
 const testPG = () => {
   return new Promise((resolve, reject) => {
-    fetch(`https://bitsox-server.herokuapp.com/users`, {
+    fetch(`https://bitsox-server.herokuapp.com/api/shop`, {
       method: "GET",
       headers: {
         Accept: "application/json",
