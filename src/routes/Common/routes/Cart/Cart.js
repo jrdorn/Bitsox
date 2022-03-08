@@ -3,6 +3,9 @@ import React from "react";
 import Proceed from "./components/Proceed/Proceed";
 import CartItem from "./components/CartItem/CartItem";
 
+//
+import { useGetCartQuery } from "../../../../store/bitsoxAPI";
+
 import styles from "./Cart.module.css";
 
 function Cart() {

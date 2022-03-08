@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./Inventory.module.css";
 
+//
+import {
+  useGetShopQuery,
+  useGetSockByNameQuery,
+} from "../../../../store/bitsoxAPI";
+
 // component containing JSON and image for individual Shop item
 //  /api/shop/:item
 function Item(props) {

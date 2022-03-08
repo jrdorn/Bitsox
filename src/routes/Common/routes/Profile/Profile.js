@@ -6,6 +6,9 @@ import Wishlist from "./components/Wishlist/Wishlist";
 
 import styles from "./Profile.module.css";
 
+//
+import { useGetPrivateQuery } from "../../../../store/bitsoxAPI";
+
 function Profile() {
   return (
     <div id={styles.Profile}>
