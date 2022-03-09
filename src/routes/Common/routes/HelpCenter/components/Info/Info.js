@@ -54,6 +54,13 @@ const HiddenPrivacy = () => {
   );
 };
 
+//
+//cookie policy hidden text
+const HiddenCookie = () => {
+  return <div>COOKIE POLICY: Lorem ipsum dolor sit amet,.</div>;
+};
+//
+
 //content to display on button click for shipping, return, and privacy policy
 let HiddenContent = (props) => {
   return (
