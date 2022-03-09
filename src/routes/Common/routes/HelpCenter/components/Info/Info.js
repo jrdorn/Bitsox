@@ -57,7 +57,15 @@ const HiddenPrivacy = () => {
 //
 //cookie policy hidden text
 const HiddenCookie = () => {
-  return <div>COOKIE POLICY: Lorem ipsum dolor sit amet,.</div>;
+  return (
+    <div>
+      COOKIE POLICY: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea
+      dictumst. In ac tempor quam. Vestibulum eleifend vehicula ligula, et
+      cursus nisl gravida sit amet. Pellentesque habitant morbi tristique
+      senectus et netus et malesuada fames ac turpis egestas.
+    </div>
+  );
 };
 //
 
@@ -133,6 +141,18 @@ function Info() {
           </Button>
 
           <HiddenContent name="Privacy" content={HiddenPrivacy()} />
+        </li>
+
+        <li>
+          <Button
+            className={styles.infoButtons}
+            variant="outlined"
+            onClick={() => displayHidden("Cookie")}
+          >
+            Cookie Policy
+          </Button>
+
+          <HiddenContent name="Cookie" content={HiddenCookie()} />
         </li>
 
         <li>
