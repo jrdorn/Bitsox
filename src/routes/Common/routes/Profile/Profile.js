@@ -1,6 +1,6 @@
 import React from "react";
 
-import Auth from "./components/Auth/Auth";
+// import Auth from "./components/Auth/Auth";
 import Update from "./components/Update/Update";
 import Wishlist from "./components/Wishlist/Wishlist";
 
@@ -12,7 +12,7 @@ import { useGetPrivateQuery } from "../../../../store/bitsoxAPI";
 function Profile() {
   return (
     <div id={styles.Profile}>
-      <Auth />
+      {/* <Auth /> */}
       <Update />
       {/* Order History / Track Orders */}
       <Wishlist />
