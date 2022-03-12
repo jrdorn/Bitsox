@@ -4,11 +4,11 @@ import styles from "./Auth.module.css";
 import LogRegForm from "./LogRegForm";
 import Logout from "./Logout";
 
-import { useGetAuthQuery } from "../../../../store/bitsoxAPI";
+// import { useGetAuthQuery } from "../../../../store/bitsoxAPI";
 
 //if user is logged in, display logout button
 //if user is not logged in, render button to register or login
-function Auth() {
+function ProfileAuth() {
   //state hooks to open and close auth modals
 
   return (
@@ -19,4 +19,4 @@ function Auth() {
   );
 }
 
-export default Auth;
+export default ProfileAuth;

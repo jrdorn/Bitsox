@@ -13,6 +13,7 @@ import Common from "./routes/Common/Common";
 
 import Root from "./routes/Common/routes/Root/Root";
 import Profile from "./routes/Common/routes/Profile/Profile";
+import ProfileAuth from "./routes/Common/routes/ProfileAuth/ProfileAuth";
 import Cart from "./routes/Common/routes/Cart/Cart";
 
 import HelpCenter from "./routes/Common/routes/HelpCenter/HelpCenter";
@@ -34,6 +35,7 @@ ReactDOM.render(
           <Route path="/" element={<Common />}>
             {/* Root shopping, Profile, Cart nested routes */}
             <Route index element={<Root />} />
+            <Route path="profile_auth" element={<ProfileAuth />} />
             <Route path="profile" element={<Profile />} />
             <Route path="cart" element={<Cart />} />
 
