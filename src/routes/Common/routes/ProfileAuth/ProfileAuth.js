@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Auth.module.css";
+import styles from "./ProfileAuth.module.css";
 
 import LogRegForm from "./LogRegForm";
 import Logout from "./Logout";
@@ -12,7 +12,7 @@ function ProfileAuth() {
   //state hooks to open and close auth modals
 
   return (
-    <div id={styles.Auth}>
+    <div id={styles.ProfileAuth}>
       <LogRegForm />
       <Logout />
     </div>

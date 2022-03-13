@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Common from "./routes/Common/Common";
 
-import Root from "./routes/Common/routes/Root/Root";
+import Shop from "./routes/Common/routes/Shop/Shop";
 import Profile from "./routes/Common/routes/Profile/Profile";
 import ProfileAuth from "./routes/Common/routes/ProfileAuth/ProfileAuth";
 import Cart from "./routes/Common/routes/Cart/Cart";
@@ -34,7 +34,7 @@ ReactDOM.render(
           {/* Common routes with Searchbar, Filters, and Navbar */}
           <Route path="/" element={<Common />}>
             {/* Root shopping, Profile, Cart nested routes */}
-            <Route index element={<Root />} />
+            <Route index element={<Shop />} />
             <Route path="profile_auth" element={<ProfileAuth />} />
             <Route path="profile" element={<Profile />} />
             <Route path="cart" element={<Cart />} />

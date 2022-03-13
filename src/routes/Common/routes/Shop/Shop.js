@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 import Inventory from "./components/Inventory/Inventory";
 
 // import { Counter } from "./components/counter/Counter";
-import styles from "./Root.module.css";
+import styles from "./Shop.module.css";
 
 // import axios from "axios";
 
-function Root() {
+function Shop() {
   //
   //test HTTP request from React app to Node Express server
   // const [data, setData] = useState(null);
@@ -50,7 +50,7 @@ function Root() {
   );
 }
 
-export default Root;
+export default Shop;
 
 //{
 /* <Link
