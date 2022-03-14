@@ -43,7 +43,7 @@ function Shop() {
   //
 
   return (
-    <div id={styles.Root} className="Page">
+    <div id={styles.Shop} className="Page">
       {/* <Deal data={!data ? "Loading..." : data} /> */}
       <Inventory />
     </div>
