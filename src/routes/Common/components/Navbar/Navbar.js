@@ -10,28 +10,36 @@ import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as SocksSolid } from "./socks-solid.svg";
 
 //
-import { Link } from "react-router-dom";
-
-/**
- *
- * TODO Pass path to MUI tabs for route highlight onload
- *
- *
- *
- */
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
-  //keep track of current selected tab
-  const [val, setValue] = React.useState(0);
-  const changeTab = (e, newValue) => {
-    setValue(newValue);
+  //get current route from React Router and match to route index in Tabs array
+  const location = useLocation().pathname;
+  const tabRouteArray = ["/", "/profile", "/cart", "/help_center"];
+  let initTab;
+  //if user navigates to a nested route, display the tab for its parent route
+  if (!tabRouteArray.includes(location)) {
+    for (let i = 0; i < tabRouteArray.length; i++) {
+      console.log(tabRouteArray[i], location);
+      if (location.includes(tabRouteArray[i])) {
+        initTab = i;
+      }
+    }
+  } else {
+    initTab = tabRouteArray.indexOf(location);
+  }
+
+  //match current selected tab to displayed route
+  const [tab, setTab] = React.useState(initTab);
+  const changeTab = (e, newTab) => {
+    setTab(newTab);
   };
 
   return (
     <nav id={styles.Navbar}>
       <Tabs
         className={styles.allTabs}
-        value={val}
+        value={tab}
         onChange={changeTab}
         textColor="inherit"
         indicatorColor="secondary"
