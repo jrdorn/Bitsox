@@ -12,6 +12,14 @@ import { ReactComponent as SocksSolid } from "./socks-solid.svg";
 //
 import { Link } from "react-router-dom";
 
+/**
+ *
+ * TODO Pass path to MUI tabs for route highlight onload
+ *
+ *
+ *
+ */
+
 function Navbar() {
   //keep track of current selected tab
   const [val, setValue] = React.useState(0);

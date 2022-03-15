@@ -4,6 +4,17 @@ import { Button } from "@mui/material";
 
 import styles from "./CartItem.module.css";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+//button theme
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#a022b5",
+    },
+  },
+});
+
 function CartItem(props) {
   return (
     <div id={styles.CartItem}>
@@ -13,7 +24,9 @@ function CartItem(props) {
         <div className={styles.itemDescr}>{props.descr}</div>
         <div className={styles.itemPrice}>{props.price}</div>
       </div>
-      <Button>Remove</Button>
+      <ThemeProvider theme={theme}>
+        <Button>Remove</Button>
+      </ThemeProvider>
     </div>
   );
 }
