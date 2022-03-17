@@ -4,7 +4,18 @@ import { Link } from "react-router-dom";
 
 import { Button, TextField } from "@mui/material";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import styles from "./Proceed.module.css";
+
+//button theme
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#a022b5",
+    },
+  },
+});
 
 //Form field styles
 const formStyles = {
@@ -57,9 +68,11 @@ function Proceed() {
         <span>$17</span>
       </div>
 
-      <Button component={Link} to="/checkout">
-        Checkout
-      </Button>
+      <ThemeProvider theme={theme}>
+        <Button component={Link} to="/checkout">
+          Checkout
+        </Button>
+      </ThemeProvider>
     </div>
   );
 }
