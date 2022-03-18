@@ -5,3 +5,7 @@
   justify-self: center;
   width: 28em;
 }
+
+#submitButton {
+  margin-top: 1em;
+}

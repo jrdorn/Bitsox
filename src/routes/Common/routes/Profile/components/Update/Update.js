@@ -148,7 +148,7 @@ function Update() {
         </FormGroup>
 
         {/* Payment */}
-        <div>Payment</div>
+        {/* <div>Payment</div> */}
 
         {/* Submit button */}
         <Button
