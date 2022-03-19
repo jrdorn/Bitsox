@@ -1,11 +1,15 @@
 #Wishlist {
-  /* border: 5px solid green; */
-  /* margin: 0; */
   border-top: 3px solid grey;
+}
+
+.listItem {
+  /* border: 5px solid red; */
 }
 
 #list {
   list-style-type: none;
+  display: grid;
+  justify-content: center;
 }
 
 .name {

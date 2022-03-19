@@ -44,12 +44,38 @@ function Wishlist() {
   return (
     <div id={styles.Wishlist}>
       <h3>Wish List</h3>
-      <ul>
-        <ListItem name="First" image="1img" price="$3.50" />
-        <ListItem name="Second" image="2img" price="$4.50" />
-        <ListItem name="Third" image="3img" price="$5.50" />
-        <ListItem name="Fourth" image="4img" price="$6.50" />
-        <ListItem name="Fifth" image="5img" price="$7.50" />
+
+      <ul id={styles.list}>
+        <ListItem
+          className={styles.listItem}
+          name="Sock0"
+          image="1img"
+          price="$3.50"
+        />
+        <ListItem
+          className={styles.listItem}
+          name="Sock1"
+          image="2img"
+          price="$4.50"
+        />
+        <ListItem
+          className={styles.listItem}
+          name="Sock2"
+          image="3img"
+          price="$5.50"
+        />
+        <ListItem
+          className={styles.listItem}
+          name="Sock3"
+          image="4img"
+          price="$6.50"
+        />
+        <ListItem
+          className={styles.listItem}
+          name="Sock4"
+          image="5img"
+          price="$7.50"
+        />
       </ul>
     </div>
   );
