@@ -10,6 +10,7 @@
 
 .itemImg {
   border: 1px solid grey;
+  border-radius: 5px;
 
   width: 5em;
   height: 5em;
@@ -27,19 +28,19 @@
 }
 
 .itemName {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 
   max-width: 7.5em;
 }
 
 .itemDescr {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 
   max-width: 6em;
 }
 
 .itemPrice {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 
   max-width: 3em;
 }
