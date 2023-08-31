@@ -17,6 +17,7 @@ const theme = createTheme({
   },
 });
 
+//TODO: integrate with CMS and replace lorem ipsum
 //dummy content
 const fakeText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sint modo partes vitae beatae. Ait enim se, si uratur, Quam hoc suave! dicturum. Nos commodius agimus. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Quantum Aristoxeni ingenium consumptum videmus in musicis? Duo Reges: constructio interrete. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari.
 
